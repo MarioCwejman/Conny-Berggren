@@ -1,54 +1,54 @@
-# Credibility Factors By Audience
+# Trovärdighetsfaktorer Per Målgrupp
 
-This file is about Conny-specific credibility, not generic trust signals.
+Det här dokumentet handlar om Connys specifika trovärdighet, inte om generella förtroendesignaler.
 
-Built from:
+Byggt på:
 
 - `CV Conny Berggren 2026-03-30.pdf`
 - `26.04.14 Underlag inför fråga webb-sida Mario.docx`
 
-## Conny's Core Credibility Assets
+## Connys Centrala Trovärdighetsfaktorer
 
-| Credibility asset | What in Conny's background supports it | Why it matters |
+| Trovärdighetsfaktor | Vad i Connys bakgrund som stöder den | Varför det spelar roll |
 | --- | --- | --- |
-| `Drygt 30 års erfarenhet` | The CV states `Drygt 30 år` and shows continuous work across the building sector from the 1980s to 2026. | Signals seniority, pattern recognition, and a long-tested professional base. |
-| `Erfarenhet genom hela byggkedjan` | He started as `byggnadssnickare`, then `arbetande arbetsledare`, `arbetsledare`, `byggplatschef`, `arbetschef`, `avdelningschef`, `projektledare`, `projekteringsledare`, `projektchef`, `projektutvecklare`, consultant, and company representative. | Makes him credible with both decision-makers and production teams because he has seen projects from the ground up. |
-| `Entreprenörs- och beställarförståelse` | The brief explicitly highlights `Entreprenör + beställarförståelse`. The CV shows experience in entreprenadföretag, project development, consultant roles, and his own companies. | Important because many of these assignments depend on understanding both the buyer's risk and the contractor's reality. |
-| `Formell kompetens och certifieringar` | RISE-certified `Kontrollansvarig PBL`, KIWA-certified `Entreprenadbesiktningsman`, `Bas P/U`, IHM-certified project leader, SBR-approved `Byggprojektledare`, SBR expert group memberships. | Turns experience into externally validated authority. |
-| `Teknisk och juridisk förståelse` | The brief says he is often engaged in `mer komplexa projekt och tvistnära situationer där det krävs både teknisk och juridisk förståelse`. The CV includes entreprenadjuridik studies, sakkunnigutlåtanden, and court-related work. | Especially important in disputes, defects, claims, and difficult close-out situations. |
-| `Tvist- och domstolserfarenhet` | The CV describes representation in `Tingsrätt` and `Hovrätt`, with four successful legal processes, including full outcomes and settlements. The brief also mentions `sakkunnig bygg`, `expertutlåtande`, and `utlåtanden inför domstol`. | Rare credibility signal. Shows that his documentation and reasoning can survive scrutiny. |
-| `Komplexa och stora projekt` | The CV includes assignments such as Västlänken, Bönekulla, Egnahemsbolaget, Statens Fastighetsverk, Västfastigheter, Trafikverket, and complex BRF and dispute-related work. | Signals that he is not limited to small straightforward assignments. |
-| `Ordning, struktur och ansvar` | The CV explicitly mentions `administrativ struktur i projekt med ordning och reda`. | Important for clients who want someone dependable, not just experienced. |
-| `Aktuell och branschförankrad` | The CV shows ongoing training and recent expert-group memberships in SBR through 2026. | Signals that he is still active, updated, and connected to the profession. |
+| `Drygt 30 års erfarenhet` | CV:t anger `Drygt 30 år` och visar kontinuerligt arbete i byggsektorn från 1980-talet till 2026. | Signal om senioritet, mönsterigenkänning och en yrkesgrund som är prövad över lång tid. |
+| `Erfarenhet genom hela byggkedjan` | Han började som `byggnadssnickare`, därefter `arbetande arbetsledare`, `arbetsledare`, `byggplatschef`, `arbetschef`, `avdelningschef`, `projektledare`, `projekteringsledare`, `projektchef`, `projektutvecklare`, konsult och bolagsföreträdare. | Gör honom trovärdig både för beslutsfattare och produktion eftersom han har sett projekt från grunden och uppåt. |
+| `Entreprenörs- och beställarförståelse` | Briefen lyfter uttryckligen `Entreprenör + beställarförståelse`. CV:t visar erfarenhet från entreprenadföretag, projektutveckling, konsultroller och egna bolag. | Viktigt eftersom många av uppdragen bygger på att förstå både beställarens risk och entreprenörens verklighet. |
+| `Formell kompetens och certifieringar` | RISE-certifierad `Kontrollansvarig PBL`, KIWA-certifierad `Entreprenadbesiktningsman`, `Bas P/U`, IHM-certifierad projektledare, SBR-godkänd `Byggprojektledare`, medlemskap i SBR:s expertgrupper. | Gör erfarenheten till externt validerad auktoritet. |
+| `Teknisk och juridisk förståelse` | Briefen säger att han ofta anlitas i `mer komplexa projekt och tvistnära situationer där det krävs både teknisk och juridisk förståelse`. CV:t innehåller studier i entreprenadjuridik, sakkunnigutlåtanden och domstolsnära arbete. | Särskilt viktigt i tvister, felärenden, kravfrågor och svåra avslutssituationer. |
+| `Tvist- och domstolserfarenhet` | CV:t beskriver uppdrag i `Tingsrätt` och `Hovrätt`, med fyra framgångsrika rättsprocesser inklusive fulla utfall och förlikningar. Briefen nämner också `sakkunnig bygg`, `expertutlåtande` och `utlåtanden inför domstol`. | En ovanlig trovärdighetsfaktor. Visar att hans dokumentation och resonemang klarar granskning. |
+| `Komplexa och stora projekt` | CV:t innehåller uppdrag som Västlänken, Bönekulla, Egnahemsbolaget, Statens Fastighetsverk, Västfastigheter, Trafikverket samt komplexa BRF- och tvistrelaterade uppdrag. | Signalerar att han inte är begränsad till små och enkla uppdrag. |
+| `Ordning, struktur och ansvar` | CV:t nämner uttryckligen `administrativ struktur i projekt med ordning och reda`. | Viktigt för klienter som vill ha någon som är pålitlig, inte bara erfaren. |
+| `Aktuell och branschförankrad` | CV:t visar löpande utbildning och färska medlemskap i SBR:s expertgrupper genom 2026. | Signal om att han fortfarande är aktiv, uppdaterad och förankrad i branschen. |
 
-## Field-Specific Experience That Builds Credibility
+## Erfarenhet Per Tjänsteområde Som Bygger Trovärdighet
 
-| Field | What in Conny's background gives him authority |
+| Område | Vad i Connys bakgrund som ger honom tyngd |
 | --- | --- |
-| `Entreprenadbesiktning` | Certified via KIWA, member of SBR expert group for entreprenadbesiktning, multiple recent inspection assignments, and a background that lets him judge both execution quality and contract context. |
-| `Kontrollansvarig (KA)` | Certified by RISE, long list of KA assignments in both private and larger commercial or public projects, plus documented ongoing PBL and BBR training. |
-| `Bas-P / Bas-U` | BAS training and repeated BAS-linked assignments in ongoing project work, especially where coordination and risk management matter early and during execution. |
-| `Projektledning / byggprojektledning` | IHM-certified project leader, SBR-approved building project leader, senior project leader at Sweco, and a long record of leading procurement, coordination, planning, and delivery in complex settings. |
-| `Sakkunnig- och tviststöd / expertutlåtanden` | Court-related experience, sakkunnigutlåtanden, value assessments, second opinions, and technical support in settlement and dispute situations. |
-| `Komplexa projekt / problemprojekt` | Repeated involvement in projects with technical, legal, coordination, or close-out complexity, including takeovers under time pressure, risk-heavy conditions, and problem-solving assignments. |
+| `Entreprenadbesiktning` | Certifierad via KIWA, medlem i SBR:s expertgrupp för entreprenadbesiktning, flera nyliga besiktningsuppdrag och en bakgrund som gör att han kan bedöma både utförandekvalitet och avtalskontext. |
+| `Kontrollansvarig (KA)` | Certifierad av RISE, lång rad av KA-uppdrag i både privata och större kommersiella eller offentliga projekt, plus dokumenterad fortbildning inom PBL och BBR. |
+| `Bas-P / Bas-U` | BAS-utbildning och återkommande BAS-kopplade uppdrag i pågående projekt, särskilt där samordning och riskhantering är viktiga tidigt och under utförandet. |
+| `Projektledning / byggprojektledning` | IHM-certifierad projektledare, SBR-godkänd byggprojektledare, senior projektledare på Sweco och lång erfarenhet av att leda upphandling, samordning, planering och leverans i komplexa sammanhang. |
+| `Sakkunnig- och tviststöd / expertutlåtanden` | Domstolsrelaterad erfarenhet, sakkunnigutlåtanden, värderingar, second opinions och tekniskt stöd i förliknings- och tvistsituationer. |
+| `Komplexa projekt / problemprojekt` | Återkommande medverkan i projekt med teknisk, juridisk, samordningsmässig eller avslutsrelaterad komplexitet, inklusive övertaganden under tidspress, risktyngda lägen och problemlösningsuppdrag. |
 
-## Audience-Specific Credibility Factors
+## Målgruppsspecifika Trovärdighetsfaktorer
 
-| Audience | The parts of Conny's credibility that matter most | What they need to see or feel |
+| Målgrupp | De delar av Connys trovärdighet som betyder mest | Vad de behöver se eller känna |
 | --- | --- | --- |
-| `Byggherre / beställare` | His long experience across both entreprenör and beställarsida, his certifications, and his ability to create `ordning och reda` in projects. | They need to feel they are hiring someone who understands responsibility, risk, and process from several sides of the table. |
-| `Fastighetsägare / förvaltare` | His long renovation and ombyggnadsbakgrund, including work in buildings under ongoing use, plus experience with defects, moisture, tenant-sensitive conditions, and follow-up work. | They need confidence that he understands real buildings in real operation, not only ideal new-build situations. |
-| `Projektutvecklare / kommersiell beställare` | His background as project leader, project development lead, project chief, and consultant in larger and more complex projects, including high-value and multi-party environments. | They need to feel he can enter a complex setting quickly and strengthen control, coordination, and decision quality. |
-| `BRF` | His independence, his experience supporting boards in technically difficult matters, his second-opinion and dispute-near work, and his ability to explain issues without sounding theatrical. | They need a senior outside person who feels trustworthy, understandable, and steady when the board lacks deep in-house technical competence. |
-| `Kommun / offentlig beställare` | His KA, project leadership, and coordination work in formal environments, including assignments tied to public actors and more regulated processes. | They need to feel he can work in a documented, professional, procurement-safe way. |
-| `Privat byggherre / småhuskund` | His original craftsman background, consumer-facing building experience, KA work, inspection work, and advisory assignments involving villas, foundations, moisture, and responsibility-period questions. | They need to feel they are getting someone experienced and clear, not someone who hides behind jargon. |
-| `Entreprenör / huvudentreprenör` | His own production-side background as carpenter, supervisor, site manager, work manager, and business owner, together with his understanding of contracts and documentation. | They trust people who understand how production actually works and can make fair judgments without pretending to be above the site reality. |
-| `Konsult / projekt- eller byggledare` | His senior specialist profile, Sweco background, SBR expert-group memberships, and broad experience that allows him to slot into a project without a long runway. | They need to feel he will strengthen their work, be easy to collaborate with, and bring authority where the project has a gap. |
-| `Advokat / ombud` | His technical and legal crossover, court experience, sakkunnigutlåtanden, and ability to support argumentation with structured reasoning and documented professional background. | They need to feel his input can hold up in serious dispute work, not just in informal advice. |
+| `Byggherre / beställare` | Hans långa erfarenhet från både entreprenörs- och beställarsidan, hans certifieringar och hans förmåga att skapa `ordning och reda` i projekt. | De behöver känna att de anlitar någon som förstår ansvar, risk och process från flera sidor av bordet. |
+| `Fastighetsägare / förvaltare` | Hans långa bakgrund inom renovering och ombyggnad, inklusive arbete i byggnader som varit i drift, plus erfarenhet av fel, fukt, hyresgästkänsliga miljöer och uppföljande arbeten. | De behöver känna förtroende för att han förstår verkliga byggnader i verklig drift, inte bara idealiska nyproduktionsprojekt. |
+| `Projektutvecklare / kommersiell beställare` | Hans bakgrund som projektledare, projektutvecklingsledare, projektchef och konsult i större och mer komplexa projekt, inklusive miljöer med höga värden och många parter. | De behöver känna att han snabbt kan komma in i ett komplext sammanhang och stärka kontroll, samordning och beslutskvalitet. |
+| `BRF` | Hans oberoende, hans erfarenhet av att stötta styrelser i tekniskt svåra frågor, hans second opinion- och tvistnära arbete samt hans förmåga att förklara frågor utan att låta dramatisk. | De behöver en senior extern person som känns trygg, begriplig och stabil när styrelsen saknar djup teknisk kompetens internt. |
+| `Kommun / offentlig beställare` | Hans KA-arbete, projektledning och samordningsuppdrag i formella miljöer, inklusive uppdrag kopplade till offentliga aktörer och mer reglerade processer. | De behöver känna att han kan arbeta dokumenterat, professionellt och upphandlingssäkert. |
+| `Privat byggherre / småhuskund` | Hans ursprungliga hantverksbakgrund, erfarenhet av arbete mot konsument, KA-uppdrag, besiktningsuppdrag och rådgivning i frågor om villor, grunder, fukt och ansvarstid. | De behöver känna att de får någon som är erfaren och tydlig, inte någon som gömmer sig bakom fackspråk. |
+| `Entreprenör / huvudentreprenör` | Hans egen produktionsbakgrund som snickare, arbetsledare, platschef, arbetschef och företagare, tillsammans med hans förståelse för avtal och dokumentation. | De litar på personer som förstår hur produktionen faktiskt fungerar och som kan göra rättvisa bedömningar utan att ställa sig över verkligheten på plats. |
+| `Konsult / projekt- eller byggledare` | Hans seniora specialistprofil, bakgrunden från Sweco, medlemskapen i SBR:s expertgrupper och den breda erfarenheten som gör att han kan komma in i ett projekt utan lång startsträcka. | De behöver känna att han stärker deras arbete, är lätt att samarbeta med och tillför auktoritet där projektet har ett gap. |
+| `Advokat / ombud` | Hans korsning mellan teknik och juridik, domstolserfarenhet, sakkunnigutlåtanden och förmåga att stötta argumentation med strukturerat resonemang och dokumenterad yrkesbakgrund. | De behöver känna att hans underlag håller i skarpa tvister, inte bara i informell rådgivning. |
 
-## Personal Qualities To Keep Visible
+## Personliga Egenskaper Som Bör Synas
 
-These should be treated as secondary to experience, but still worth surfacing in copy:
+De här bör ses som sekundära i förhållande till erfarenhet, men är ändå värda att lyfta i copy:
 
 - `Oberoende`
 - `Senior`
@@ -57,6 +57,6 @@ These should be treated as secondary to experience, but still worth surfacing in
 - `Teknisk och juridiskt orienterad`
 - `Van vid komplexa situationer`
 
-The most important principle for the website is this:
+Den viktigaste principen för webbplatsen är denna:
 
-- Conny's credibility should be presented primarily through the weight and breadth of his experience, then reinforced by certifications, memberships, and a calm personal tone.
+- Connys trovärdighet bör i första hand presenteras genom tyngden och bredden i hans erfarenhet, och därefter förstärkas med certifieringar, medlemskap och en lugn personlig ton.

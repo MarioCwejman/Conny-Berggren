@@ -1,84 +1,68 @@
-# Conny Berggren Service, Audience, and Credibility Map
+# Mötesunderlag
 
-This folder splits the original combined note into smaller working files.
+Det här är en kort sammanfattning av hur jag just nu uppfattar Conny Berggrens erbjudande utifrån materialet i den här mappen.
 
-## Contents
+Målet är inte att låsa fast något, utan att bekräfta om riktningen känns rätt innan jag tar webbplatsen vidare.
+
+## Min Nuvarande Bild
+
+Conny framstår mindre som en allmän byggkonsult och mer som en senior, oberoende specialist.
+
+Den tydligaste röda tråden i materialet är:
+
+- besiktning och kontroll
+- samordning och projektstöd
+- kvalificerat stöd i komplexa eller tvistnära situationer
+
+Med andra ord känns erbjudandet starkast när det presenteras som erfarenhet, struktur, oberoende och saklig bedömning i projekt där mycket står på spel.
+
+## Vad Jag Har Arbetat Med Idag
+
+Idag har jag kartlagt hur materialet hänger ihop mellan:
+
+- tjänster
+- målgrupper
+- trovärdighetsfaktorer
+- var varje tjänst passar bäst
+- hur olika tjänster kan kräva olika kontaktvägar
+
+Min viktigaste slutsats är att tjänsterna faktiskt hänger ihop till en tydlig profil, och att webbplatsen därför sannolikt bör presentera dem i en medveten ordning snarare än som en lös lista.
+
+## Det Jag Vill Stämma Av Imorgon
+
+Innan jag går vidare vill jag gärna stämma av några saker:
+
+## Hur ser succe ut
+
+1. Hur prioriterar du din kompetens och dina tjänster idag?
+2. Vilka tjänster är viktigast för dig att bli förknippad med?
+3. Hur vill du att människor kontaktar dig?
+4. Behöver olika tjänster olika kontaktvägar?
+5. Hur många fler kunder vill du faktiskt ha?
+6. Vilken typ av kunder vill du ha mer av?
+7. Hur enkel eller hur detaljerad ska webbplatsen vara?
+8. Känns den här övergripande strukturen rätt för dig?
+
+## Min Rekommendation Just Nu
+
+Min känsla just nu är att webbplatsen bör hållas ganska enkel.
+
+Den behöver sannolikt inte bli en stor eller komplicerad webbplats. En starkare riktning kan vara:
+
+- en tydlig presentation av vem Conny hjälper
+- en tydlig presentation av de viktigaste tjänsterna
+- en stark trovärdighetsdel
+- en kontaktlösning som passar typen av förfrågan
+
+Det skulle göra webbplatsen professionell och användbar utan att den blir en CV-dump eller ett onödigt stort projekt.
+
+## Förslag På Öppning I Mötet
+
+Jag ägnade igår åt att kartlägga hur dina tjänster, målgrupper och trovärdighet hänger ihop. Det jag vill stämma av med dig idag är om jag läser verksamheten rätt innan jag går vidare.
+
+## Arbetsfiler
 
 - [01_Services.md](./01_Services.md)
 - [02_Audiences.md](./02_Audiences.md)
 - [03_Credibility_Factors.md](./03_Credibility_Factors.md)
 - [04_Correlation_Map.md](./04_Correlation_Map.md)
-
-## Working Notes
-
-Built from:
-
-- the April 14, 2026 brief in `26.04.14 Underlag inför fråga webb-sida Mario.docx`
-- current web research on Swedish building roles, inspections, and court expert use
-
-Interpretation rule:
-
-- `What the service is / how it works` is source-based.
-- Audience, contact-medium, credibility-factor, and positioning recommendations are synthesis.
-- The goal is website clarity, not a full business strategy.
-
-## Website Implication
-
-If Conny wants the site to feel clear and commercially useful, the contact paths should not be one-size-fits-all.
-
-- `Entreprenadbesiktning`: show `Ring` and `Skicka projektunderlag`.
-- `Kontrollansvarig (KA)`: show `Skicka handlingar` and `Boka avstämning`.
-- `Bas-P / Bas-U`: show `Boka möte`.
-- `Projektledning`: show `Boka introduktionsmöte`.
-- `Tviststöd / expertutlåtande`: show `Ring direkt` and `Skicka underlag konfidentiellt`.
-- `Problemprojekt`: show `Behöver ni senior förstärkning? Ring direkt`.
-
-## Recommended Positioning Order
-
-1. `Entreprenadbesiktning`
-2. `Kontrollansvarig (KA)`
-3. `Bas-P / Bas-U`
-4. `Projektledning`
-5. `Sakkunnig- och tviststöd`
-6. `Komplexa projekt / problemprojekt`
-
-Reason:
-
-- The first four are easier for a visitor to immediately recognize.
-- The last two strengthen seniority and authority.
-- Together they support the brief's direction: a credibility site with depth, not a CV dump.
-
-## Sources
-
-Primary sources used:
-
-- Boverket, `Kontrollansvariga - PBL kunskapsbanken`  
-  https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/kontrollansvariga-och-deras-uppgifter/
-- Boverket, `Roller i projekteringsskedet - Energiguiden`  
-  https://www.boverket.se/sv/energiguiden/energieffektivisera-flerbostadshus/energirenovera/projektera/roller-i-projekteringsskedet/
-- Arbetsmiljöverket, `Bas-P`  
-  https://www.av.se/produktion-industri-och-logistik/bygg/vem-ar-ansvarig-for-vad-i-ett-byggprojekt/bas-p/
-- Arbetsmiljöverket, `Bas-U`  
-  https://www.av.se/produktion-industri-och-logistik/bygg/vem-ar-ansvarig-for-vad-i-ett-byggprojekt/bas-u/
-- Arbetsmiljöverket, `Samarbete i byggprojekt`  
-  https://www.av.se/produktion-industri-och-logistik/bygg/projektering-och-byggarbetsmiljosamordning/samarbete-i-byggprojekt/
-- Arbetsmiljöverket, `Vem är ansvarig för vad inom bygg- och anläggning? (ADI 631)`  
-  https://www.av.se/globalassets/filer/publikationer/broschyrer/vem-ar-ansvarig-for-vad-inom-bygg-och-anlaggning-broschyr-adi631.pdf
-- SBR, `Goda råd Entreprenadbesiktning`  
-  https://sbr.se/goda-rad-entreprenadbesiktning/
-- Sveriges Domstolar, `Huvudförhandling`  
-  https://www.domstol.se/amnen/patent-och-marknad/design/huvudforhandling/
-- Högsta domstolen, `Ö 4634-09`  
-  https://www.domstol.se/globalassets/filer/domstol/hogstadomstolen/avgoranden/2011/o-4634-09.pdf
-
-## Notes on Inference
-
-The following are synthesis, not direct source claims:
-
-- the exact commercial grouping of Conny's services
-- the audience prioritization across those services
-- the `optimal contact medium` recommendations
-- the credibility-factor framing by audience
-- the `recommended positioning order`
-
-Those parts are based on the brief plus the researched buying and process logic behind each role.

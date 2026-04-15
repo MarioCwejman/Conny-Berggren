@@ -1,13 +1,13 @@
-# Audience Snapshot
+# Målgruppsöversikt
 
-| Audience | What they are | How they usually function | What they usually care about |
+| Målgrupp | Vad de är | Hur de vanligtvis fungerar | Vad de vanligtvis bryr sig om |
 | --- | --- | --- | --- |
-| `Byggherre / beställare` | The party ordering and paying for the work. | Can be a company, BRF, municipality, private person, or property owner. Often appoints KA, Bas-P, Bas-U, and inspector. | Risk reduction, compliance, time, cost, and clear accountability. |
-| `Fastighetsägare / förvaltare` | Owner or manager of a building or property portfolio. | Often acts as client in renovation, maintenance, rebuild, or tenant work. | Minimal disruption, good documentation, lower defect risk, and credible advice. |
-| `Projektutvecklare / kommersiell beställare` | Professional client running larger development or conversion projects. | Coordinates many consultants and contractors and makes staged decisions. | Delivery certainty, coordination, defensible documentation, and strong close-out. |
-| `BRF` | Housing association board responsible for a shared property. | Makes collective decisions, often without deep technical in-house competence. | Simple explanations, independence, traceability, and low drama. |
-| `Kommun / offentlig beställare` | Public client such as a municipality or municipal property owner. | More formal process, more documentation, often procurement-driven. | Clear scope, documentation, compliance, and professional process. |
-| `Privat byggherre / småhuskund` | Individual person building or renovating a home. | Usually less familiar with process, permits, and technical roles. | Plain language, safety, independence, and help avoiding expensive mistakes. |
-| `Entreprenör / huvudentreprenör` | Contractor executing the work. | Usually not the main buyer of KA or BAS, but central in site coordination and inspections. Can also be a counterparty in disputes or a joint party in inspection setup. | Clear requirements, efficient process, fewer stoppages, and fair assessment. |
-| `Konsult / projekt- eller byggledare` | Advisory or coordination role already in the project. | Can refer work or bring in a senior specialist for a defined gap. | Reliable specialist backup and smooth collaboration. |
-| `Advokat / ombud` | Legal representative in a dispute or court matter. | Needs technical material that can stand up under scrutiny. | Precision, speed, independence, and defensible written conclusions. |
+| `Byggherre / beställare` | Den part som beställer och betalar för arbetet. | Kan vara ett företag, en BRF, en kommun, en privatperson eller en fastighetsägare. Utser ofta KA, Bas-P, Bas-U och besiktningsman. | Riskminimering, regelefterlevnad, tid, kostnad och tydligt ansvar. |
+| `Fastighetsägare / förvaltare` | Ägare eller förvaltare av en byggnad eller fastighetsportfölj. | Agerar ofta beställare vid renovering, underhåll, ombyggnad eller hyresgästanpassning. | Så liten störning som möjligt, bra dokumentation, lägre risk för fel och trovärdiga råd. |
+| `Projektutvecklare / kommersiell beställare` | Professionell beställare som driver större utvecklings- eller ombyggnadsprojekt. | Samordnar många konsulter och entreprenörer och fattar beslut i flera steg. | Leveranssäkerhet, samordning, dokumentation som håller och ett starkt avslut. |
+| `BRF` | Bostadsrättsföreningens styrelse med ansvar för en gemensam fastighet. | Fattar kollektiva beslut, ofta utan djup teknisk kompetens internt. | Enkla förklaringar, oberoende, spårbarhet och så lite drama som möjligt. |
+| `Kommun / offentlig beställare` | Offentlig beställare, till exempel en kommun eller ett kommunalt fastighetsbolag. | Har ofta mer formella processer, mer dokumentation och upphandlingsstyrda arbetssätt. | Tydligt uppdrag, dokumentation, efterlevnad och professionell process. |
+| `Privat byggherre / småhuskund` | Privatperson som bygger eller renoverar ett hus. | Är ofta mindre van vid processer, tillstånd och tekniska roller. | Klarspråk, trygghet, oberoende och hjälp att undvika dyra misstag. |
+| `Entreprenör / huvudentreprenör` | Entreprenör som utför arbetet. | Är vanligtvis inte huvudköpare av KA eller BAS, men central i samordning på plats och i besiktningar. Kan också vara motpart i tvister eller gemensam part i besiktningsupplägg. | Tydliga krav, effektiv process, färre stopp och rättvis bedömning. |
+| `Konsult / projekt- eller byggledare` | Rådgivande eller samordnande roll som redan finns i projektet. | Kan hänvisa uppdrag vidare eller ta in en senior specialist för ett tydligt gap i projektet. | Tillförlitlig specialistbackup och smidigt samarbete. |
+| `Advokat / ombud` | Juridiskt ombud i en tvist eller domstolsprocess. | Behöver tekniskt material som håller för granskning. | Precision, snabbhet, oberoende och slutsatser som går att försvara skriftligt. |
