@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -59,8 +63,8 @@ body {
 .brand-logo-wrap {
   display: grid;
   width: 88px;
+  height: 54px;
   min-width: 88px;
-  min-height: 54px;
   place-items: center;
   overflow: hidden;
   border-radius: 4px;
@@ -71,7 +75,8 @@ body {
 .brand-logo {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand strong,
