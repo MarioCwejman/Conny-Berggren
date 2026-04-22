@@ -499,12 +499,16 @@ address,
   font-style: normal;
 }
 
-.site-footer a,
-.site-footer span {
+.site-footer a {
   color: var(--white);
   text-decoration: underline;
   text-decoration-color: rgba(255, 253, 248, 0.35);
   text-underline-offset: 5px;
+}
+
+.company-meta span,
+.postal-address {
+  color: var(--white);
 }
 
 @media (max-width: 900px) {
