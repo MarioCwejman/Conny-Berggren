@@ -13,3 +13,68 @@ document.querySelectorAll('a[href="#"]').forEach((link) => {
     event.preventDefault();
   });
 });
+
+const puzzleLinks = document.querySelectorAll(".puzzle-label[href^='#']");
+const specialtyCards = document.querySelectorAll(".specialty-card");
+const specialtiesHeading = document.querySelector(
+  ".specialties .section-heading",
+);
+let highlightTimer;
+
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+);
+
+const scrollPuzzleTargetIntoView = (targetCard) => {
+  const headerHeight = header?.getBoundingClientRect().height ?? 0;
+  const viewportGap = window.innerWidth <= 900 ? 16 : 24;
+  const cardTop = targetCard.getBoundingClientRect().top + window.scrollY;
+  const cardScrollTop = Math.max(0, cardTop - headerHeight - viewportGap);
+
+  if (!specialtiesHeading) {
+    window.scrollTo({
+      top: cardScrollTop,
+      behavior: prefersReducedMotion.matches ? "auto" : "smooth",
+    });
+    return;
+  }
+
+  const headingBounds = specialtiesHeading.getBoundingClientRect();
+  const headingBottom = headingBounds.bottom + window.scrollY;
+  const minimumVisibleHeading = Math.max(
+    64,
+    Math.min(headingBounds.height * 0.7, 140),
+  );
+  const maxScrollTop = Math.max(
+    0,
+    headingBottom - headerHeight - minimumVisibleHeading,
+  );
+
+  window.scrollTo({
+    top: Math.min(cardScrollTop, maxScrollTop),
+    behavior: prefersReducedMotion.matches ? "auto" : "smooth",
+  });
+};
+
+puzzleLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const targetId = decodeURIComponent(link.getAttribute("href").slice(1));
+    const targetCard = document.getElementById(targetId);
+
+    if (!targetCard) return;
+
+    event.preventDefault();
+    scrollPuzzleTargetIntoView(targetCard);
+
+    window.clearTimeout(highlightTimer);
+    specialtyCards.forEach((card) => card.classList.remove("is-highlighted"));
+
+    requestAnimationFrame(() => {
+      void targetCard.offsetWidth;
+      targetCard.classList.add("is-highlighted");
+      highlightTimer = window.setTimeout(() => {
+        targetCard.classList.remove("is-highlighted");
+      }, 2600);
+    });
+  });
+});
