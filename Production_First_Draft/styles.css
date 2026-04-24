@@ -178,7 +178,7 @@ body {
   height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 26px 54px rgba(7, 25, 47, 0.36));
-  opacity: 0.96;
+  opacity: 1;
 }
 
 .puzzle-label {
