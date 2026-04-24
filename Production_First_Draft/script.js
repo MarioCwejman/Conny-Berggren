@@ -27,7 +27,8 @@ const prefersReducedMotion = window.matchMedia(
 
 const scrollPuzzleTargetIntoView = (targetCard) => {
   const headerHeight = header?.getBoundingClientRect().height ?? 0;
-  const viewportGap = window.innerWidth <= 900 ? 16 : 24;
+  const isCompactLayout = window.innerWidth <= 900;
+  const viewportGap = isCompactLayout ? 16 : 24;
   const cardTop = targetCard.getBoundingClientRect().top + window.scrollY;
   const cardScrollTop = Math.max(0, cardTop - headerHeight - viewportGap);
 
@@ -39,19 +40,19 @@ const scrollPuzzleTargetIntoView = (targetCard) => {
     return;
   }
 
-  const headingBounds = specialtiesHeading.getBoundingClientRect();
-  const headingBottom = headingBounds.bottom + window.scrollY;
-  const minimumVisibleHeading = Math.max(
-    64,
-    Math.min(headingBounds.height * 0.7, 140),
-  );
-  const maxScrollTop = Math.max(
-    0,
-    headingBottom - headerHeight - minimumVisibleHeading,
-  );
+  if (!isCompactLayout) {
+    const headingTop = specialtiesHeading.getBoundingClientRect().top + window.scrollY;
+    const sectionScrollTop = Math.max(0, headingTop - headerHeight - 48);
+
+    window.scrollTo({
+      top: sectionScrollTop,
+      behavior: prefersReducedMotion.matches ? "auto" : "smooth",
+    });
+    return;
+  }
 
   window.scrollTo({
-    top: Math.min(cardScrollTop, maxScrollTop),
+    top: cardScrollTop,
     behavior: prefersReducedMotion.matches ? "auto" : "smooth",
   });
 };
