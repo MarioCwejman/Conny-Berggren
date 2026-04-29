@@ -94,7 +94,16 @@
             Kort introduktion om erbjudande, målgrupp och arbetsområde skrivs här.
           </p>
           <div class="hero-actions" aria-label="Snabba kontaktvägar">
-            <a class="button primary" href="tel:+46708490300">Ring här</a>
+            <a class="button primary phone-cta-mobile" href="tel:+46708490300">Ring här</a>
+            <button
+              class="button primary phone-cta-desktop"
+              type="button"
+              data-phone-trigger
+              data-phone-number="+46 708 49 03 00"
+              aria-label="Visa telefonnummer till Conny Berggren"
+            >
+              Ring här
+            </button>
             <a class="button primary" href="mailto:conny.berggren@cbuab.se" aria-label="Skicka e-post till Conny Berggren">Mejla här</a>
             <a class="button secondary" href="https://www.linkedin.com/in/conny-berggren-454455169" target="_blank" rel="noopener" aria-label="LinkedIn-profil för Conny Berggren">LinkedIn</a>
           </div>
@@ -154,33 +163,77 @@
         </div>
 
         <div class="specialty-grid">
-          <article class="specialty-card" id="projektledning">
-            <p class="specialty-index">01</p>
-            <h3>Projektledning</h3>
-            <p>
-              Kort beskrivning av projektledning, ansvar, samordning och upplägg skrivs här.
-            </p>
+          <article
+            class="specialty-card"
+            id="projektledning"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="projektledning-details"
+          >
+            <div class="specialty-summary">
+              <p class="specialty-index">01</p>
+              <h3>Projektledning</h3>
+            </div>
+            <div class="specialty-details" id="projektledning-details">
+              <p>
+                Kort beskrivning av projektledning, ansvar, samordning och upplägg skrivs här.
+              </p>
+            </div>
           </article>
-          <article class="specialty-card" id="entreprenadbesiktningsman">
-            <p class="specialty-index">02</p>
-            <h3>Entreprenadbesiktningsman</h3>
-            <p>
-              Kort beskrivning av besiktning, bedömning, ansvar och dokumentation skrivs här.
-            </p>
+          <article
+            class="specialty-card"
+            id="entreprenadbesiktningsman"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="entreprenadbesiktningsman-details"
+          >
+            <div class="specialty-summary">
+              <p class="specialty-index">02</p>
+              <h3>Entreprenadbesiktningsman</h3>
+            </div>
+            <div class="specialty-details" id="entreprenadbesiktningsman-details">
+              <p>
+                Kort beskrivning av besiktning, bedömning, ansvar och dokumentation skrivs här.
+              </p>
+            </div>
           </article>
-          <article class="specialty-card" id="kontrollansvarig">
-            <p class="specialty-index">03</p>
-            <h3>Kontrollansvarig</h3>
-            <p>
-              Kort beskrivning av kontrollansvar, process, samråd och uppföljning skrivs här.
-            </p>
+          <article
+            class="specialty-card"
+            id="kontrollansvarig"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="kontrollansvarig-details"
+          >
+            <div class="specialty-summary">
+              <p class="specialty-index">03</p>
+              <h3>Kontrollansvarig</h3>
+            </div>
+            <div class="specialty-details" id="kontrollansvarig-details">
+              <p>
+                Kort beskrivning av kontrollansvar, process, samråd och uppföljning skrivs här.
+              </p>
+            </div>
           </article>
-          <article class="specialty-card" id="tvistforebyggande">
-            <p class="specialty-index">04</p>
-            <h3>Tvistförebyggande rådgivning</h3>
-            <p>
-              Kort beskrivning av rådgivning, underlag, risker och nästa steg skrivs här.
-            </p>
+          <article
+            class="specialty-card"
+            id="tvistforebyggande"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="tvistforebyggande-details"
+          >
+            <div class="specialty-summary">
+              <p class="specialty-index">04</p>
+              <h3>Tvistförebyggande rådgivning</h3>
+            </div>
+            <div class="specialty-details" id="tvistforebyggande-details">
+              <p>
+                Kort beskrivning av rådgivning, underlag, risker och nästa steg skrivs här.
+              </p>
+            </div>
           </article>
         </div>
       </section>
@@ -192,7 +245,16 @@
             Kort text om typer av uppdrag, roller, omfattning och upplägg skrivs här.
           </p>
         </div>
-        <a class="text-link" href="tel:+46708490300">Ring här</a>
+        <a class="text-link phone-cta-mobile" href="tel:+46708490300">Ring här</a>
+        <button
+          class="text-link phone-cta-desktop"
+          type="button"
+          data-phone-trigger
+          data-phone-number="+46 708 49 03 00"
+          aria-label="Visa telefonnummer till Conny Berggren"
+        >
+          Ring här
+        </button>
       </section>
 
       <section class="quote-section" id="omdome" aria-labelledby="quote-title">
@@ -223,6 +285,36 @@
         <span>Momsreg.nr: SE559249542701</span>
       </div>
     </footer>
+
+    <div class="phone-popup" data-phone-popup hidden>
+      <div class="phone-popup-backdrop" data-phone-popup-close></div>
+      <div
+        class="phone-popup-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="phone-popup-title"
+        aria-describedby="phone-popup-description"
+      >
+        <button class="phone-popup-close" type="button" data-phone-popup-close aria-label="Stäng popup">
+          Stäng
+        </button>
+        <p class="phone-popup-kicker">Telefon</p>
+        <h2 class="phone-popup-title" id="phone-popup-title">Ring Conny Berggren</h2>
+        <p class="phone-popup-description" id="phone-popup-description">
+          Telefonnumret visas här så att du enkelt kan slå det manuellt eller kopiera det.
+        </p>
+        <p class="phone-popup-number" data-phone-popup-number>+46 708 49 03 00</p>
+        <div class="phone-popup-actions">
+          <button class="button primary" type="button" data-phone-popup-copy>
+            Kopiera nummer
+          </button>
+          <button class="button secondary phone-popup-dismiss" type="button" data-phone-popup-close>
+            Stäng
+          </button>
+        </div>
+        <p class="phone-popup-status" data-phone-popup-status aria-live="polite"></p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
