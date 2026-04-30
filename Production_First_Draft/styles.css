@@ -826,8 +826,8 @@ body.has-specialty-popup-open {
 .specialty-card {
   position: relative;
   overflow: hidden;
-  display: grid;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
   gap: 0;
   min-height: 250px;
   padding: 30px 26px;
@@ -844,9 +844,11 @@ body.has-specialty-popup-open {
 }
 
 .specialty-summary {
-  display: grid;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   gap: 12px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .specialty-preview {
