@@ -4,7 +4,7 @@
     "description": "Kort beskrivning av innehåll, erbjudande och kontaktuppgifter skrivs här 01."
   },
   "brand": {
-    "primary_name": "Conny Berggren",
+    "primary_name": "Mario Cwejman",
     "supporting_name": "CBU Management",
     "company_name": "CBU AB",
     "company_number": "Org.nr: 559249-5427",
@@ -16,7 +16,6 @@
   },
   "contact": {
     "phone_display": "+46 708 49 03 00",
-    "phone_href": "tel:+46708490300",
     "email": "conny.berggren@cbuab.se",
     "linkedin_url": "https://www.linkedin.com/in/conny-berggren-454455169",
     "address": "Fjällgatan 22, 413 17 Göteborg"
@@ -69,7 +68,6 @@
   "specialties": [
     {
       "slot": "1",
-      "slug": "projektledning",
       "puzzle_label": "Projektledning",
       "title": "Projektledning",
       "summary": "Kort text om projektledning skrivs här 17.",
@@ -77,7 +75,6 @@
     },
     {
       "slot": "2",
-      "slug": "entreprenadbesiktningsman",
       "puzzle_label": "Entreprenad\nbesiktningsman",
       "title": "Entreprenadbesiktningsman",
       "summary": "Kort text om entreprenadbesiktningsman skrivs här 19.",
@@ -85,7 +82,6 @@
     },
     {
       "slot": "3",
-      "slug": "kontrollansvarig",
       "puzzle_label": "Kontrollansvarig",
       "title": "Kontrollansvarig",
       "summary": "Kort text om kontrollansvarig skrivs här 21.",
@@ -93,7 +89,6 @@
     },
     {
       "slot": "4",
-      "slug": "tvistforebyggande",
       "puzzle_label": "Tvistförebyggande",
       "title": "Tvistförebyggande rådgivning",
       "summary": "Kort text om tvistförebyggande rådgivning skrivs här 23.",
@@ -101,7 +96,6 @@
     },
     {
       "slot": "5",
-      "slug": "kompetens-05",
       "puzzle_label": "Kompetens 05",
       "title": "Kompetens 05",
       "summary": "Kort text om kompetens 05 skrivs här 25.",
@@ -109,7 +103,6 @@
     },
     {
       "slot": "6",
-      "slug": "kompetens-06",
       "puzzle_label": "Kompetens 06",
       "title": "Kompetens 06",
       "summary": "Kort text om kompetens 06 skrivs här 27.",
@@ -117,7 +110,6 @@
     },
     {
       "slot": "7",
-      "slug": "kompetens-07",
       "puzzle_label": "Kompetens 07",
       "title": "Kompetens 07",
       "summary": "Kort text om kompetens 07 skrivs här 29.",
@@ -125,7 +117,6 @@
     },
     {
       "slot": "8",
-      "slug": "kompetens-08",
       "puzzle_label": "Kompetens 08",
       "title": "Kompetens 08",
       "summary": "Kort text om kompetens 08 skrivs här 31.",
