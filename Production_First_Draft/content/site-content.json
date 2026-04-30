@@ -114,6 +114,13 @@
       "title": "Kompetens 07",
       "summary": "Kort text om kompetens 07 skrivs här 29.",
       "details": "Kort beskrivning av kompetens 07 skrivs här 30."
+    },
+    {
+      "slot": "8",
+      "puzzle_label": "Kompetens 08",
+      "title": "Kompetens 08",
+      "summary": "Kort text om kompetens 08 skrivs här 31.",
+      "details": "Kort beskrivning av kompetens 07 skrivs här 32."
     }
   ],
   "service_band": {
