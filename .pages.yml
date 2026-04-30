@@ -1,0 +1,258 @@
+media:
+  input: Production_First_Draft/assets
+  output: /assets
+
+components:
+  credential_item:
+    type: object
+    fields:
+      - name: title
+        label: Rubrik på kortet 01
+        type: string
+        required: true
+      - name: detail
+        label: Kort text på kortet 02
+        type: text
+        required: true
+      - name: url
+        label: Länk från kortet 03
+        type: string
+        required: true
+
+  specialty_item:
+    type: object
+    fields:
+      - name: slot
+        label: Plats i pusslet 01
+        type: select
+        required: true
+        options:
+          values:
+            - { value: "1", label: "1 - uppe vänster" }
+            - { value: "2", label: "2 - uppe mitten" }
+            - { value: "3", label: "3 - uppe höger" }
+            - { value: "4", label: "4 - mitten vänster" }
+            - { value: "5", label: "5 - mitten höger" }
+            - { value: "6", label: "6 - nere vänster" }
+            - { value: "7", label: "7 - nere mitten" }
+            - { value: "8", label: "8 - nere höger" }
+      - name: puzzle_label
+        label: Kort namn i pusslet 02
+        type: string
+        required: true
+      - name: title
+        label: Rubrik på kortet 03
+        type: string
+        required: true
+      - name: summary
+        label: Kort text på kortet 04
+        type: text
+        required: true
+      - name: details
+        label: Mer text när kortet öppnas 05
+        type: text
+        required: true
+
+content:
+  - name: homepage
+    label: Startsida
+    type: file
+    path: Production_First_Draft/content/site-content.json
+    format: json
+    fields:
+      - name: meta
+        label: Meta och Google
+        type: object
+        fields:
+          - name: title
+            label: Titel i webbläsaren 01
+            type: string
+            required: true
+          - name: description
+            label: Kort beskrivning för Google 02
+            type: text
+            required: true
+
+      - name: brand
+        label: Namn och bolag
+        type: object
+        fields:
+          - name: primary_name
+            label: Namn högst upp 03
+            type: string
+            required: true
+          - name: supporting_name
+            label: Namn under logotypen 04
+            type: string
+            required: true
+          - name: company_name
+            label: Firmanamn 05
+            type: string
+            required: true
+          - name: company_number
+            label: Organisationsnummer 06
+            type: string
+            required: true
+          - name: vat_number
+            label: Momsregistreringsnummer 07
+            type: string
+            required: true
+
+      - name: assets
+        label: Bilder och CV
+        type: object
+        fields:
+          - name: portrait_image
+            label: Porträttbild 08
+            type: image
+            required: true
+            options:
+              path: .
+          - name: cv_file
+            label: CV PDF 09
+            type: file
+            required: true
+            options:
+              categories: [document]
+              extensions: [pdf]
+              path: .
+
+      - name: contact
+        label: Kontakt
+        type: object
+        fields:
+          - name: phone_display
+            label: Telefonnummer som visas 10
+            type: string
+            required: true
+          - name: email
+            label: E-postadress 11
+            type: string
+            required: true
+          - name: linkedin_url
+            label: LinkedIn-länk 12
+            type: string
+            required: true
+          - name: address
+            label: Postadress 13
+            type: string
+            required: true
+
+      - name: hero
+        label: Toppsektion
+        type: object
+        fields:
+          - name: eyebrow
+            label: Kort yrkesrad 14
+            type: string
+            required: true
+          - name: title
+            label: Huvudrubrik 15
+            type: text
+            required: true
+          - name: lede
+            label: Ingress 16
+            type: text
+            required: true
+          - name: line
+            label: Kort förklaring 17
+            type: text
+            required: true
+
+      - name: profile
+        label: Kort om Conny
+        type: object
+        fields:
+          - name: name
+            label: Namn i profilrutan 18
+            type: string
+            required: true
+          - name: summary
+            label: Kort presentation 19
+            type: text
+            required: true
+
+      - name: credentials
+        label: Erfarenhet och förtroende
+        type: object
+        fields:
+          - name: kicker
+            label: Sektionstitel 20
+            type: string
+            required: true
+          - name: items
+            label: Kort i listan
+            component: credential_item
+            list: true
+
+      - name: specialties_section
+        label: Intro till pusselbitar
+        type: object
+        fields:
+          - name: kicker
+            label: Sektionstitel liten 21
+            type: string
+            required: true
+          - name: title
+            label: Rubrik 22
+            type: text
+            required: true
+          - name: intro
+            label: Kort förklaring 23
+            type: text
+            required: true
+
+      - name: specialties
+        label: Pusselbitar och kort
+        component: specialty_item
+        list: true
+
+      - name: service_band
+        label: Mörk informationsrad
+        type: object
+        fields:
+          - name: title
+            label: Rubrik 24
+            type: text
+            required: true
+          - name: body
+            label: Text 25
+            type: text
+            required: true
+
+      - name: quote
+        label: Nedre textsektion
+        type: object
+        fields:
+          - name: title
+            label: Rubrik 26
+            type: text
+            required: true
+          - name: body
+            label: Text 27
+            type: text
+            required: true
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: brand
+            label: Kort bolagsnamn 28
+            type: string
+            required: true
+          - name: summary
+            label: Kort sammanfattning 29
+            type: text
+            required: true
+
+settings:
+  hide: true
+  content: true
+  commit:
+    identity: app
+    templates:
+      create: "Innehåll: skapa {path}"
+      update: "Innehåll: uppdatera {path}"
+      delete: "Innehåll: ta bort {path}"
+      rename: "Innehåll: byt namn {oldPath} -> {newPath}"

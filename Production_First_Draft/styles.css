@@ -199,7 +199,7 @@ body {
   --hero-center-logo-width: 20.5%;
   top: 48%;
   left: 50%;
-  width: min(48vw, 66vh, 760px);
+  width: min(50vw, 68vh, 790px);
   aspect-ratio: 1;
   transform: translate(-50%, -52%);
 }
@@ -216,7 +216,8 @@ body {
 .puzzle-label {
   position: absolute;
   display: grid;
-  width: 28%;
+  width: 24%;
+  max-width: 170px;
   min-height: 58px;
   place-items: center;
   padding: 6px 8px;
@@ -235,7 +236,8 @@ body {
 
 .puzzle-label span:last-child {
   display: block;
-  max-width: 13ch;
+  max-width: 11ch;
+  white-space: pre-line;
 }
 
 .puzzle-label:hover,
@@ -268,15 +270,35 @@ body {
 
 .puzzle-label-02 {
   top: 24.5%;
-  left: 77%;
+  left: 50%;
 }
 
 .puzzle-label-03 {
+  top: 24.5%;
+  left: 77%;
+}
+
+.puzzle-label-04 {
+  top: 50%;
+  left: 23%;
+}
+
+.puzzle-label-05 {
+  top: 50%;
+  left: 77%;
+}
+
+.puzzle-label-06 {
   top: 77.5%;
   left: 23%;
 }
 
-.puzzle-label-04 {
+.puzzle-label-07 {
+  top: 77.5%;
+  left: 50%;
+}
+
+.puzzle-label-08 {
   top: 77.5%;
   left: 77%;
 }
@@ -316,6 +338,11 @@ h1 {
   font-size: clamp(4.2rem, 11vw, 9.5rem);
   line-height: 0.94;
   letter-spacing: 0;
+}
+
+.hero-title {
+  max-width: 11ch;
+  font-size: clamp(3rem, 6vw, 5.4rem);
 }
 
 .hero-logo-heading {
@@ -424,7 +451,8 @@ h3 {
   display: none;
 }
 
-body.has-phone-popup-open {
+body.has-phone-popup-open,
+body.has-specialty-popup-open {
   overflow: hidden;
 }
 
@@ -527,6 +555,106 @@ body.has-phone-popup-open {
   font-weight: 700;
 }
 
+.specialty-popup[hidden] {
+  display: none;
+}
+
+.specialty-popup {
+  position: fixed;
+  z-index: 40;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.specialty-popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 25, 47, 0.58);
+  backdrop-filter: blur(10px);
+}
+
+.specialty-popup-panel {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 16px;
+  width: min(100%, 680px);
+  max-height: min(84vh, 760px);
+  padding: 28px;
+  overflow-y: auto;
+  border: 1px solid rgba(23, 32, 28, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 253, 248, 0.98);
+  box-shadow: 0 28px 80px rgba(7, 25, 47, 0.28);
+}
+
+.specialty-popup-close {
+  justify-self: end;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.specialty-popup-close:focus-visible {
+  border-radius: 999px;
+  outline: 3px solid rgba(191, 212, 255, 0.92);
+  outline-offset: 4px;
+}
+
+.specialty-popup-kicker,
+.specialty-popup-index {
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.specialty-popup-index {
+  letter-spacing: 0.14em;
+}
+
+.specialty-popup-title {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.specialty-popup-body {
+  display: grid;
+  gap: 14px;
+}
+
+.specialty-popup-body p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.specialty-popup-summary {
+  color: var(--ink) !important;
+  font-size: 1.08rem !important;
+  font-weight: 700;
+  line-height: 1.65 !important;
+}
+
+.specialty-popup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.specialty-popup-panel .button.secondary {
+  border-color: rgba(23, 32, 28, 0.16);
+  color: var(--ink);
+  background: transparent;
+}
+
 .profile-panel {
   position: absolute;
   z-index: 2;
@@ -602,6 +730,7 @@ body.has-phone-popup-open {
   position: relative;
   z-index: 3;
   margin: -1px 0 0;
+  scroll-margin-top: clamp(88px, 12vh, 120px);
   padding: var(--space-5) clamp(18px, 5vw, 72px) var(--space-6);
   color: var(--white);
   background: var(--blue-deep);
@@ -680,11 +809,18 @@ body.has-phone-popup-open {
   max-width: 760px;
 }
 
+.section-intro {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
 .specialty-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-4);
-  align-items: start;
+  gap: clamp(18px, 2.4vw, 26px);
+  align-items: stretch;
 }
 
 .specialty-card {
@@ -693,8 +829,8 @@ body.has-phone-popup-open {
   display: grid;
   align-content: start;
   gap: 0;
-  min-height: 220px;
-  padding: 28px;
+  min-height: 250px;
+  padding: 30px 26px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: rgba(255, 253, 248, 0.5);
@@ -709,30 +845,36 @@ body.has-phone-popup-open {
 
 .specialty-summary {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+  height: 100%;
 }
 
-.specialty-details {
-  max-height: 0;
-  margin-top: 0;
+.specialty-preview {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.68;
+  display: -webkit-box;
   overflow: hidden;
-  opacity: 0;
-  transition:
-    max-height 280ms cubic-bezier(0.16, 1, 0.3, 1),
-    margin-top 220ms ease,
-    opacity 180ms ease;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
-.specialty-card.is-expanded {
+.specialty-cta {
+  margin-top: auto;
+  padding-top: 4px;
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.specialty-card:hover {
   border-color: rgba(47, 104, 201, 0.32);
-  background: rgba(255, 253, 248, 0.9);
+  background: rgba(255, 253, 248, 0.86);
   box-shadow: 0 18px 42px rgba(7, 25, 47, 0.1);
-}
-
-.specialty-card.is-expanded .specialty-details {
-  max-height: 220px;
-  margin-top: 14px;
-  opacity: 1;
+  transform: translateY(-3px);
 }
 
 .specialty-card:focus-visible {
@@ -870,7 +1012,6 @@ body.has-phone-popup-open {
 
 @media (prefers-reduced-motion: reduce) {
   .specialty-card,
-  .specialty-details,
   .specialty-card::before,
   .specialty-card::after {
     animation: none !important;
@@ -1029,7 +1170,7 @@ address,
     --hero-center-logo-width: 21.5%;
     top: auto;
     left: auto;
-    width: min(100%, 520px);
+    width: min(100%, 548px);
     margin: 0 auto 32px;
     transform: none;
   }
@@ -1084,7 +1225,8 @@ address,
   }
 
   .puzzle-label {
-    width: 30%;
+    width: 24%;
+    max-width: 132px;
     min-height: 46px;
     padding: 4px 5px;
     font-size: clamp(0.58rem, 2.7vw, 0.76rem);
@@ -1112,6 +1254,19 @@ address,
   }
 
   .phone-popup-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-popup {
+    padding: 16px;
+  }
+
+  .specialty-popup-panel {
+    padding: 22px;
+  }
+
+  .specialty-popup-actions {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -1179,7 +1334,7 @@ address,
   }
 
   .specialty-card {
-    min-height: 190px;
+    min-height: 210px;
     padding: 22px;
   }
 

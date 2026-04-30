@@ -6,7 +6,7 @@
     <title>Conny Berggren | CBU Management</title>
     <meta
       name="description"
-      content="Kort beskrivning av innehåll, erbjudande och kontaktuppgifter skrivs här."
+      content="Kort beskrivning av innehåll, erbjudande och kontaktuppgifter skrivs här 01."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -20,28 +20,32 @@
               src="assets/cbu-logotyp.png"
               width="320"
               height="182"
-              alt="cbu management"
+              alt="CBU Management"
             />
           </span>
           <span class="brand-text">
-            <strong>CBU Management</strong>
-            <small>Conny Berggren</small>
+            <strong data-brand-primary>Conny Berggren</strong>
+            <small data-brand-supporting>CBU Management</small>
           </span>
         </a>
-        <a class="brand-affiliation" href="#certifieringar" aria-label="Till certifieringar och SBR-medlemskap">
+        <a
+          class="brand-affiliation"
+          href="#erfarenhet"
+          aria-label="Till erfarenhet och medlemskap"
+        >
           <img
             class="brand-affiliation-logo"
             src="assets/sbrlogorgb.png"
             width="540"
             height="213"
-            alt="SBR Byggingenjörerna"
+            alt="SBR Byggingenj&ouml;rerna"
           />
         </a>
       </div>
 
       <nav class="site-nav" aria-label="Huvudmeny">
         <a href="#kompetenser">Kompetenser</a>
-        <a href="#omdome">Omtanke</a>
+        <a href="#erfarenhet">Erfarenhet</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </header>
@@ -49,7 +53,7 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-backdrop" aria-hidden="true"></div>
-        <nav class="hero-puzzle-map" aria-label="Kompetenser i pusslet">
+        <nav class="hero-puzzle-map" aria-label="Kompetenser i pusslet" data-puzzle-map>
           <img
             class="hero-puzzle-image"
             src="assets/hero-banner.svg"
@@ -57,24 +61,9 @@
             height="1280"
             alt=""
           />
-          <a class="puzzle-label puzzle-label-01" href="#projektledning">
-            <span class="puzzle-index">01</span>
-            <span>Projektledning</span>
-          </a>
-          <a class="puzzle-label puzzle-label-02" href="#entreprenadbesiktningsman">
-            <span class="puzzle-index">02</span>
-            <span>Entreprenad-<br />besiktningsman</span>
-          </a>
-          <a class="puzzle-label puzzle-label-03" href="#kontrollansvarig">
-            <span class="puzzle-index">03</span>
-            <span>Kontrollansvarig</span>
-          </a>
-          <a class="puzzle-label puzzle-label-04" href="#tvistforebyggande">
-            <span class="puzzle-index">04</span>
-            <span>Tvist-<br />förebyggande</span>
-          </a>
-          <div class="hero-brand-on-piece">
-            <h1 id="hero-title" class="hero-logo-heading" aria-label="cbu management">
+          <div data-puzzle-labels></div>
+          <div class="hero-brand-on-piece" aria-hidden="true">
+            <div class="hero-logo-heading">
               <img
                 class="hero-logo-image"
                 src="assets/cbu-logotyp.png"
@@ -82,30 +71,36 @@
                 height="182"
                 alt=""
               />
-            </h1>
+            </div>
           </div>
         </nav>
+
         <div class="hero-content">
-          <p class="eyebrow">Yrkesroll här</p>
-          <p class="hero-lede">
-            Kort huvudbudskap här.
-          </p>
-          <p class="hero-line">
-            Kort introduktion om erbjudande, målgrupp och arbetsområde skrivs här.
-          </p>
-          <div class="hero-actions" aria-label="Snabba kontaktvägar">
-            <a class="button primary phone-cta-mobile" href="tel:+46708490300">Ring här</a>
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 id="hero-title" class="hero-title" data-hero-title></h1>
+          <p class="hero-lede" data-hero-lede></p>
+          <p class="hero-line" data-hero-line></p>
+          <div class="hero-actions" aria-label="Snabba kontaktv&auml;gar">
+            <a class="button primary phone-cta-mobile" data-phone-link href="#">Ring h&auml;r</a>
             <button
               class="button primary phone-cta-desktop"
               type="button"
               data-phone-trigger
-              data-phone-number="+46 708 49 03 00"
+              data-phone-number=""
               aria-label="Visa telefonnummer till Conny Berggren"
             >
-              Ring här
+              Ring h&auml;r
             </button>
-            <a class="button primary" href="mailto:conny.berggren@cbuab.se" aria-label="Skicka e-post till Conny Berggren">Mejla här</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/conny-berggren-454455169" target="_blank" rel="noopener" aria-label="LinkedIn-profil för Conny Berggren">LinkedIn</a>
+            <a class="button primary" data-email-link href="#">Mejla h&auml;r</a>
+            <a
+              class="button secondary"
+              data-linkedin-link
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
 
@@ -113,176 +108,89 @@
           <div class="profile-media">
             <div class="portrait">
               <img
+                data-profile-image
                 src="assets/conny-berggren.png"
                 width="160"
                 height="220"
-                alt="Porträttfoto av Conny Berggren"
+                alt="Portr&auml;ttfoto av Conny Berggren"
               />
             </div>
-            <a class="profile-cv-link" href="assets/cv-conny-berggren-2026-03-30.pdf" target="_blank" rel="noopener">
+            <a
+              class="profile-cv-link"
+              data-cv-link
+              href="assets/cv-conny-berggren-2026-03-30.pdf"
+              target="_blank"
+              rel="noopener"
+            >
               CV PDF
             </a>
           </div>
           <div>
-            <p class="profile-name">Namn här</p>
-            <p>Kort beskrivning av erfarenhet, bakgrund och specialistområden skrivs här.</p>
+            <p class="profile-name" data-profile-name></p>
+            <p data-profile-summary></p>
           </div>
         </aside>
       </section>
 
-      <section class="credential-strip" id="certifieringar" aria-label="Certifieringar och medlemskap">
-        <p class="credential-kicker">Certifieringar och medlemskap</p>
-        <div class="credential-track">
-          <a class="credential-card" href="assets/cv-conny-berggren-2026-03-30.pdf" target="_blank" rel="noopener">
-            <strong>Medlemskap</strong>
-            <span class="credential-detail">Kort text om medlemskap</span>
-          </a>
-          <a class="credential-card" href="assets/cv-conny-berggren-2026-03-30.pdf" target="_blank" rel="noopener">
-            <strong>Certifiering</strong>
-            <span class="credential-detail">Kort text om certifiering</span>
-          </a>
-          <a class="credential-card" href="assets/cv-conny-berggren-2026-03-30.pdf" target="_blank" rel="noopener">
-            <strong>Behörighet</strong>
-            <span class="credential-detail">Kort text om behörighet</span>
-          </a>
-          <a class="credential-card" href="assets/cv-conny-berggren-2026-03-30.pdf" target="_blank" rel="noopener">
-            <strong>Utbildning</strong>
-            <span class="credential-detail">Kort text om utbildning</span>
-          </a>
-          <a class="credential-card" href="assets/cv-conny-berggren-2026-03-30.pdf" target="_blank" rel="noopener">
-            <strong>Kompetens</strong>
-            <span class="credential-detail">Kort text om kompetens</span>
-          </a>
-        </div>
+      <section
+        class="credential-strip"
+        id="erfarenhet"
+        aria-label="Erfarenhet, förtroende och medlemskap"
+      >
+        <p class="credential-kicker" data-credentials-kicker></p>
+        <div class="credential-track" data-credentials-list></div>
       </section>
 
       <section class="specialties" id="kompetenser" aria-labelledby="specialties-title">
         <div class="section-heading">
-          <div class="section-kicker">Kompetenser</div>
-          <h2 id="specialties-title">Kort om fyra Kompetenser</h2>
+          <div class="section-kicker" data-specialties-kicker></div>
+          <h2 id="specialties-title" data-specialties-title></h2>
+          <p class="section-intro" data-specialties-intro></p>
         </div>
 
-        <div class="specialty-grid">
-          <article
-            class="specialty-card"
-            id="projektledning"
-            role="button"
-            tabindex="0"
-            aria-expanded="false"
-            aria-controls="projektledning-details"
-          >
-            <div class="specialty-summary">
-              <p class="specialty-index">01</p>
-              <h3>Projektledning</h3>
-            </div>
-            <div class="specialty-details" id="projektledning-details">
-              <p>
-                Kort beskrivning av projektledning, ansvar, samordning och upplägg skrivs här.
-              </p>
-            </div>
-          </article>
-          <article
-            class="specialty-card"
-            id="entreprenadbesiktningsman"
-            role="button"
-            tabindex="0"
-            aria-expanded="false"
-            aria-controls="entreprenadbesiktningsman-details"
-          >
-            <div class="specialty-summary">
-              <p class="specialty-index">02</p>
-              <h3>Entreprenadbesiktningsman</h3>
-            </div>
-            <div class="specialty-details" id="entreprenadbesiktningsman-details">
-              <p>
-                Kort beskrivning av besiktning, bedömning, ansvar och dokumentation skrivs här.
-              </p>
-            </div>
-          </article>
-          <article
-            class="specialty-card"
-            id="kontrollansvarig"
-            role="button"
-            tabindex="0"
-            aria-expanded="false"
-            aria-controls="kontrollansvarig-details"
-          >
-            <div class="specialty-summary">
-              <p class="specialty-index">03</p>
-              <h3>Kontrollansvarig</h3>
-            </div>
-            <div class="specialty-details" id="kontrollansvarig-details">
-              <p>
-                Kort beskrivning av kontrollansvar, process, samråd och uppföljning skrivs här.
-              </p>
-            </div>
-          </article>
-          <article
-            class="specialty-card"
-            id="tvistforebyggande"
-            role="button"
-            tabindex="0"
-            aria-expanded="false"
-            aria-controls="tvistforebyggande-details"
-          >
-            <div class="specialty-summary">
-              <p class="specialty-index">04</p>
-              <h3>Tvistförebyggande rådgivning</h3>
-            </div>
-            <div class="specialty-details" id="tvistforebyggande-details">
-              <p>
-                Kort beskrivning av rådgivning, underlag, risker och nästa steg skrivs här.
-              </p>
-            </div>
-          </article>
-        </div>
+        <div class="specialty-grid" data-specialties-list></div>
       </section>
 
-      <section class="service-band" aria-label="Tjänster">
+      <section class="service-band" aria-label="Uppdrag">
         <div>
-          <h2>Uppdrag</h2>
-          <p>
-            Kort text om typer av uppdrag, roller, omfattning och upplägg skrivs här.
-          </p>
+          <h2 data-service-band-title></h2>
+          <p data-service-band-body></p>
         </div>
-        <a class="text-link phone-cta-mobile" href="tel:+46708490300">Ring här</a>
+        <a class="text-link phone-cta-mobile" data-phone-link href="#">Ring h&auml;r</a>
         <button
           class="text-link phone-cta-desktop"
           type="button"
           data-phone-trigger
-          data-phone-number="+46 708 49 03 00"
+          data-phone-number=""
           aria-label="Visa telefonnummer till Conny Berggren"
         >
-          Ring här
+          Ring h&auml;r
         </button>
       </section>
 
-      <section class="quote-section" id="omdome" aria-labelledby="quote-title">
-        <h2 id="quote-title">
-          Kort värdebudskap eller sammanfattande rubrik placeras här.
-        </h2>
-        <p>
-          Kort text om arbetssätt, erfarenhet och vilket stöd som erbjuds skrivs här.
-        </p>
+      <section class="quote-section" aria-labelledby="quote-title">
+        <h2 id="quote-title" data-quote-title></h2>
+        <p data-quote-body></p>
       </section>
     </main>
 
     <footer class="site-footer" id="kontakt">
       <div>
-        <p class="footer-brand">CBU AB</p>
-        <p>Kort sammanfattning av erbjudande, kompetens och kontaktvägar skrivs här.</p>
+        <p class="footer-brand" data-footer-brand></p>
+        <p data-footer-summary></p>
       </div>
 
       <address>
-        <a href="tel:+46708490300">+46 708490300</a>
-        <span class="postal-address">Fj&auml;llgatan 22, 413 17 G&ouml;teborg</span>
-        <a href="https://www.linkedin.com/in/conny-berggren-454455169" target="_blank" rel="noopener">LinkedIn</a>
+        <a data-phone-link data-phone-text href="#"></a>
+        <span class="postal-address" data-address></span>
+        <a data-linkedin-link href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a data-email-link data-email-text href="#"></a>
       </address>
 
       <div class="company-meta">
-        <span>Firmanamn: CBU AB</span>
-        <span>Org.nr: 559249-5427</span>
-        <span>Momsreg.nr: SE559249542701</span>
+        <span data-company-name></span>
+        <span data-company-number></span>
+        <span data-vat-number></span>
       </div>
     </footer>
 
@@ -295,24 +203,59 @@
         aria-labelledby="phone-popup-title"
         aria-describedby="phone-popup-description"
       >
-        <button class="phone-popup-close" type="button" data-phone-popup-close aria-label="Stäng popup">
-          Stäng
+        <button
+          class="phone-popup-close"
+          type="button"
+          data-phone-popup-close
+          aria-label="St&auml;ng popup"
+        >
+          St&auml;ng
         </button>
         <p class="phone-popup-kicker">Telefon</p>
         <h2 class="phone-popup-title" id="phone-popup-title">Ring Conny Berggren</h2>
         <p class="phone-popup-description" id="phone-popup-description">
-          Telefonnumret visas här så att du enkelt kan slå det manuellt eller kopiera det.
+          Telefonnumret visas h&auml;r s&aring; att du enkelt kan sl&aring; det manuellt eller
+          kopiera det.
         </p>
-        <p class="phone-popup-number" data-phone-popup-number>+46 708 49 03 00</p>
+        <p class="phone-popup-number" data-phone-popup-number></p>
         <div class="phone-popup-actions">
           <button class="button primary" type="button" data-phone-popup-copy>
             Kopiera nummer
           </button>
           <button class="button secondary phone-popup-dismiss" type="button" data-phone-popup-close>
-            Stäng
+            St&auml;ng
           </button>
         </div>
         <p class="phone-popup-status" data-phone-popup-status aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="specialty-popup" data-specialty-popup hidden>
+      <div class="specialty-popup-backdrop" data-specialty-popup-close></div>
+      <div
+        class="specialty-popup-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="specialty-popup-title"
+        aria-describedby="specialty-popup-body"
+      >
+        <button
+          class="specialty-popup-close"
+          type="button"
+          data-specialty-popup-close
+          data-specialty-popup-focus
+          aria-label="St&auml;ng popup"
+        >
+          St&auml;ng
+        </button>
+        <p class="specialty-popup-kicker">Kompetens</p>
+        <p class="specialty-popup-index" data-specialty-popup-index></p>
+        <h2
+          class="specialty-popup-title"
+          id="specialty-popup-title"
+          data-specialty-popup-title
+        ></h2>
+        <div class="specialty-popup-body" id="specialty-popup-body" data-specialty-popup-body></div>
       </div>
     </div>
 
