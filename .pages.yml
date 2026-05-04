@@ -1,5 +1,5 @@
 media:
-  input: Production_First_Draft/assets
+  input: Prod/assets
   output: /assets
 
 components:
@@ -57,7 +57,7 @@ content:
   - name: homepage
     label: Startsida
     type: file
-    path: Production_First_Draft/content/site-content.json
+    path: Prod/content/site-content.json
     format: json
     fields:
       - name: meta
