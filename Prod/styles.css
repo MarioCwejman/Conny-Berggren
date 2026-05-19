@@ -60,8 +60,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-5);
-  padding: var(--space-4) clamp(18px, 4vw, 56px);
+  gap: var(--space-4);
+  padding: 12px clamp(18px, 3.4vw, 48px);
   color: var(--white);
   transition:
     background-color 180ms ease,
@@ -86,21 +86,21 @@ body {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   min-width: 0;
   text-decoration: none;
 }
 
 .brand-logo-wrap {
   display: grid;
-  width: 84px;
-  height: 52px;
-  min-width: 84px;
+  width: 68px;
+  height: 42px;
+  min-width: 68px;
   place-items: center;
   overflow: hidden;
   border-radius: var(--radius-sm);
   background: rgba(255, 253, 248, 0.94);
-  padding: 6px 10px;
+  padding: 5px 8px;
 }
 
 .brand-logo {
@@ -120,14 +120,14 @@ body {
 
 .brand-affiliation {
   display: grid;
-  width: 86px;
-  min-width: 86px;
-  height: 52px;
+  width: 70px;
+  min-width: 70px;
+  height: 42px;
   place-items: center;
   overflow: hidden;
   border-radius: var(--radius-sm);
   background: rgba(255, 253, 248, 0.94);
-  padding: 8px 10px;
+  padding: 6px 8px;
 }
 
 .brand-affiliation-logo {
@@ -143,7 +143,7 @@ body {
 }
 
 .brand strong {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 800;
   letter-spacing: 0.01em;
 }
@@ -151,14 +151,14 @@ body {
 .brand small {
   color: currentColor;
   opacity: 0.84;
-  font-size: 0.95rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
 .site-nav {
   display: flex;
-  gap: clamp(16px, 2vw, 24px);
-  font-size: 0.94rem;
+  gap: clamp(14px, 1.8vw, 22px);
+  font-size: 0.9rem;
   line-height: 1.2;
 }
 
@@ -173,10 +173,10 @@ body {
 
 .hero {
   position: relative;
-  min-height: 86vh;
+  min-height: 82vh;
   display: grid;
-  align-items: end;
-  padding: 124px clamp(18px, 5vw, 72px) 56px;
+  align-items: center;
+  padding: 104px clamp(18px, 4vw, 58px) 48px;
   color: var(--white);
   background: var(--blue-ink);
   overflow: hidden;
@@ -199,7 +199,7 @@ body {
   --hero-center-logo-width: 20.5%;
   top: 48%;
   left: 50%;
-  width: min(50vw, 68vh, 790px);
+  width: min(40vw, 54vh, 632px);
   aspect-ratio: 1;
   transform: translate(-50%, -52%);
 }
@@ -217,12 +217,12 @@ body {
   position: absolute;
   display: grid;
   width: 24%;
-  max-width: 170px;
-  min-height: 58px;
+  max-width: 136px;
+  min-height: 46px;
   place-items: center;
-  padding: 6px 8px;
+  padding: 5px 6px;
   color: var(--blue-ink);
-  font-size: clamp(0.78rem, 1.05vw, 1rem);
+  font-size: clamp(0.62rem, 0.84vw, 0.8rem);
   font-weight: 800;
   line-height: 1.05;
   text-align: center;
@@ -236,7 +236,7 @@ body {
 
 .puzzle-label span:last-child {
   display: block;
-  max-width: 11ch;
+  max-width: 13ch;
   white-space: pre-line;
 }
 
@@ -306,7 +306,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 520px;
+  max-width: 460px;
   display: grid;
   gap: var(--space-4);
 }
@@ -335,14 +335,14 @@ p {
 
 h1 {
   max-width: 15ch;
-  font-size: clamp(4.2rem, 11vw, 9.5rem);
+  font-size: clamp(3.36rem, 8.8vw, 7.6rem);
   line-height: 0.94;
   letter-spacing: 0;
 }
 
 .hero-title {
   max-width: 11ch;
-  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-size: clamp(2.4rem, 4.8vw, 4.32rem);
 }
 
 .hero-logo-heading {
@@ -388,15 +388,15 @@ h3 {
 }
 
 .hero-lede {
-  max-width: 690px;
-  font-size: clamp(1.45rem, 2.35vw, 2.05rem);
+  max-width: 560px;
+  font-size: clamp(1.16rem, 1.88vw, 1.64rem);
   line-height: 1.18;
 }
 
 .hero-line {
-  max-width: 620px;
+  max-width: 540px;
   color: rgba(255, 253, 248, 0.82);
-  font-size: 1.03rem;
+  font-size: 0.98rem;
   line-height: 1.65;
 }
 
@@ -409,13 +409,13 @@ h3 {
 
 .button {
   display: inline-flex;
-  min-height: 50px;
+  min-height: 42px;
   align-items: center;
   justify-content: center;
   border: 1px solid currentColor;
   border-radius: 999px;
-  padding: 0 var(--space-5);
-  font-size: 1rem;
+  padding: 0 var(--space-4);
+  font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1.1;
@@ -659,13 +659,13 @@ body.has-specialty-popup-open {
   position: absolute;
   z-index: 2;
   right: clamp(18px, 5vw, 72px);
-  bottom: 42px;
+  bottom: 40px;
   display: grid;
-  width: min(388px, calc(100vw - 36px));
-  grid-template-columns: 104px 1fr;
-  gap: 18px;
+  width: min(320px, calc(100vw - 36px));
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
   align-items: start;
-  padding: 18px;
+  padding: 14px;
   border: 1px solid rgba(255, 253, 248, 0.28);
   border-radius: var(--radius-md);
   background: rgba(7, 25, 47, 0.62);
@@ -675,7 +675,7 @@ body.has-specialty-popup-open {
 
 .profile-media {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .portrait {
@@ -701,14 +701,14 @@ body.has-specialty-popup-open {
 
 .profile-cv-link {
   display: inline-flex;
-  min-height: 36px;
+  min-height: 32px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 253, 248, 0.28);
   border-radius: 999px;
   color: var(--white);
   background: rgba(255, 253, 248, 0.1);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 800;
   line-height: 1.1;
   text-decoration: none;
@@ -716,8 +716,8 @@ body.has-specialty-popup-open {
 
 .profile-panel p {
   color: rgba(255, 253, 248, 0.78);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 .profile-name {
@@ -731,7 +731,7 @@ body.has-specialty-popup-open {
   z-index: 3;
   margin: -1px 0 0;
   scroll-margin-top: clamp(88px, 12vh, 120px);
-  padding: var(--space-5) clamp(18px, 5vw, 72px) var(--space-6);
+  padding: 20px clamp(18px, 4vw, 58px) 26px;
   color: var(--white);
   background: var(--blue-deep);
 }
@@ -756,10 +756,10 @@ body.has-specialty-popup-open {
   display: grid;
   align-content: start;
   gap: 10px;
-  min-height: 124px;
+  min-height: 100px;
   border: 1px solid rgba(255, 253, 248, 0.3);
   border-radius: var(--radius-md);
-  padding: 18px 20px;
+  padding: 14px 16px;
   color: var(--white);
   background: rgba(255, 253, 248, 0.05);
   box-shadow: 0 10px 28px rgba(7, 25, 47, 0.12);
@@ -772,14 +772,14 @@ body.has-specialty-popup-open {
 }
 
 .credential-card strong {
-  font-size: 1.04rem;
+  font-size: 0.96rem;
   font-weight: 800;
   line-height: 1.15;
 }
 
 .credential-detail {
   color: rgba(255, 253, 248, 0.78);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   line-height: 1.45;
 }
 
@@ -1164,7 +1164,7 @@ address,
   .hero {
     display: block;
     min-height: auto;
-    padding: 108px clamp(18px, 5vw, 72px) 48px;
+    padding: 96px clamp(18px, 4vw, 58px) 42px;
   }
 
   .hero-puzzle-map {
@@ -1172,13 +1172,13 @@ address,
     --hero-center-logo-width: 21.5%;
     top: auto;
     left: auto;
-    width: min(100%, 548px);
-    margin: 0 auto 32px;
+    width: min(100%, 438px);
+    margin: 0 auto 26px;
     transform: none;
   }
 
   .hero-content {
-    max-width: 720px;
+    max-width: 600px;
   }
 
   .profile-panel {
@@ -1186,8 +1186,8 @@ address,
     right: auto;
     bottom: auto;
     width: 100%;
-    max-width: 520px;
-    margin-top: 32px;
+    max-width: 416px;
+    margin-top: 26px;
   }
 
   .section-heading,
@@ -1208,13 +1208,17 @@ address,
 
 @media (max-width: 620px) {
   .hero {
-    padding-top: 104px;
+    padding-top: 90px;
   }
 
   h1 {
     font-size: clamp(3.25rem, 16vw, 5.25rem);
     max-width: 100%;
     overflow-wrap: break-word;
+  }
+
+  .hero-title {
+    max-width: 100%;
   }
 
   .hero-logo-heading {
@@ -1228,10 +1232,10 @@ address,
 
   .puzzle-label {
     width: 24%;
-    max-width: 132px;
-    min-height: 46px;
+    max-width: 106px;
+    min-height: 38px;
     padding: 4px 5px;
-    font-size: clamp(0.58rem, 2.7vw, 0.76rem);
+    font-size: clamp(0.46rem, 1.9vw, 0.56rem);
   }
 
   .puzzle-index {
@@ -1274,10 +1278,10 @@ address,
   }
 
   .brand-affiliation {
-    width: 74px;
-    min-width: 74px;
-    height: 46px;
-    padding: 7px 8px;
+    width: 62px;
+    min-width: 62px;
+    height: 38px;
+    padding: 6px 7px;
   }
 
   .credential-strip {
@@ -1292,11 +1296,11 @@ address,
   .credential-card {
     min-height: auto;
     gap: 10px;
-    padding: 16px;
+    padding: 14px;
   }
 
   .credential-card strong {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 
   .brand {
@@ -1304,9 +1308,9 @@ address,
   }
 
   .brand-logo-wrap {
-    width: 76px;
-    height: 46px;
-    min-width: 76px;
+    width: 64px;
+    height: 40px;
+    min-width: 64px;
   }
 
   .brand-text {
@@ -1320,11 +1324,11 @@ address,
   }
 
   .brand strong {
-    font-size: 0.93rem;
+    font-size: 0.86rem;
   }
 
   .brand small {
-    font-size: 0.83rem;
+    font-size: 0.78rem;
   }
 
   .header-brand-group {
