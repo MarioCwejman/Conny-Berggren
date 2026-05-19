@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Conny Berggren | CBU Management",
-    "description": "Senior certifierad och medlem i SBR projektledare, kontrollansvarig PBL och entreprenadbesiktningsman. Tvisteförebyggande rådgivning.\n"
+    "description": "Senior certifierad och medlem i SBR projektledare, kontrollansvarig PBL och entreprenadbesiktningsman. Tvisteförebyggande rådgivning."
   },
   "brand": {
     "primary_name": "CBU Management",
@@ -23,116 +23,116 @@
   "hero": {
     "eyebrow": "Senior certifierad och medlem i SBR projektledare, kontrollansvarig PBL och entreprenadbesiktningsman. Tvisteförebyggande rådgivning.",
     "title": ".",
-    "lede": "Kort introduktion om erbjudande, målgrupp och arbetsområde skrivs här 04.",
-    "line": "Kort kompletterande text om erbjudande, målgrupp och arbetsområde skrivs här 05."
+    "lede": "Kort introduktion om erbjudande, målgrupp och arbetsområde skrivs här.",
+    "line": "Kort kompletterande text om erbjudande, målgrupp och arbetsområde skrivs här."
   },
   "profile": {
-    "name": "Namn här 06",
-    "summary": "Kort beskrivning av erfarenhet, bakgrund och specialistområden skrivs här 07."
+    "name": "Namn här",
+    "summary": "Kort beskrivning av erfarenhet, bakgrund och specialistområden skrivs här."
   },
   "credentials": {
-    "kicker": "Certifieringar och medlemskap 08",
+    "kicker": "Certifieringar och medlemskap",
     "items": [
       {
         "title": "Medlemskap",
-        "detail": "Kort text om medlemskap skrivs här 09.",
+        "detail": "Kort text om medlemskap skrivs här.",
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
       },
       {
         "title": "Certifiering",
-        "detail": "Kort text om certifiering skrivs här 10.",
+        "detail": "Kort text om certifiering skrivs här.",
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
       },
       {
         "title": "Behörighet",
-        "detail": "Kort text om behörighet skrivs här 11.",
+        "detail": "Kort text om behörighet skrivs här.",
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
       },
       {
         "title": "Utbildning",
-        "detail": "Kort text om utbildning skrivs här 12.",
+        "detail": "Kort text om utbildning skrivs här.",
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
       },
       {
         "title": "Kompetens",
-        "detail": "Kort text om kompetens skrivs här 13.",
+        "detail": "Kort text om kompetens skrivs här.",
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
       }
     ]
   },
   "specialties_section": {
-    "kicker": "Kompetenser 14",
-    "title": "Kort om kompetenser 15.",
-    "intro": "Kort introduktion om kompetenserna skrivs här 16."
+    "kicker": "Kompetenser",
+    "title": "Kort om kompetenser.",
+    "intro": "Kort introduktion om kompetenserna skrivs här."
   },
   "specialties": [
     {
       "slot": "1",
       "puzzle_label": "Projektledning",
       "title": "Projektledning",
-      "summary": "Kort text om projektledning skrivs här 17.",
-      "details": "Kort beskrivning av projektledning, ansvar, samordning och upplägg skrivs här 18."
+      "summary": "Kort text om projektledning skrivs här.",
+      "details": "Kort beskrivning av projektledning, ansvar, samordning och upplägg skrivs här."
     },
     {
       "slot": "2",
       "puzzle_label": "Entreprenad\nbesiktningsman",
       "title": "Entreprenadbesiktningsman",
-      "summary": "Kort text om entreprenadbesiktningsman skrivs här 19.",
-      "details": "Kort beskrivning av besiktning, bedömning, ansvar och dokumentation skrivs här 20."
+      "summary": "Kort text om entreprenadbesiktningsman skrivs här.",
+      "details": "Kort beskrivning av besiktning, bedömning, ansvar och dokumentation skrivs här."
     },
     {
       "slot": "3",
       "puzzle_label": "Kontrollansvarig",
       "title": "Kontrollansvarig",
-      "summary": "Kort text om kontrollansvarig skrivs här 21.",
-      "details": "Kort beskrivning av kontrollansvar, process, samråd och uppföljning skrivs här 22."
+      "summary": "Kort text om kontrollansvarig skrivs här.",
+      "details": "Kort beskrivning av kontrollansvar, process, samråd och uppföljning skrivs här."
     },
     {
       "slot": "4",
       "puzzle_label": "Tvistförebyggande",
       "title": "Tvistförebyggande rådgivning",
-      "summary": "Kort text om tvistförebyggande rådgivning skrivs här 23.",
-      "details": "Kort beskrivning av rådgivning, underlag, risker och nästa steg skrivs här 24."
+      "summary": "Kort text om tvistförebyggande rådgivning skrivs här.",
+      "details": "Kort beskrivning av rådgivning, underlag, risker och nästa steg skrivs här."
     },
     {
       "slot": "5",
-      "puzzle_label": "Kompetens 05",
-      "title": "Kompetens 05",
-      "summary": "Kort text om kompetens 05 skrivs här 25.",
-      "details": "Kort beskrivning av kompetens 05 skrivs här 26."
+      "puzzle_label": "Kompetens",
+      "title": "Kompetens",
+      "summary": "Kort text om kompetens skrivs här.",
+      "details": "Kort beskrivning av kompetens skrivs här."
     },
     {
       "slot": "6",
-      "puzzle_label": "Kompetens 06",
-      "title": "Kompetens 06",
-      "summary": "Kort text om kompetens 06 skrivs här 27.",
-      "details": "Kort beskrivning av kompetens 06 skrivs här 28."
+      "puzzle_label": "Kompetens",
+      "title": "Kompetens",
+      "summary": "Kort text om kompetens skrivs här.",
+      "details": "Kort beskrivning av kompetens skrivs här."
     },
     {
       "slot": "7",
-      "puzzle_label": "Kompetens 07",
-      "title": "Kompetens 07",
-      "summary": "Kort text om kompetens 07 skrivs här 29.",
-      "details": "Kort beskrivning av kompetens 07 skrivs här 30."
+      "puzzle_label": "Kompetens",
+      "title": "Kompetens",
+      "summary": "Kort text om kompetens skrivs här.",
+      "details": "Kort beskrivning av kompetens skrivs här."
     },
     {
       "slot": "8",
-      "puzzle_label": "Kompetens 08",
-      "title": "Kompetens 08",
-      "summary": "Kort text om kompetens 08 skrivs här 31.",
-      "details": "Kort beskrivning av kompetens 07 skrivs här 32."
+      "puzzle_label": "Kompetens",
+      "title": "Kompetens",
+      "summary": "Kort text om kompetens skrivs här.",
+      "details": "Kort beskrivning av kompetens skrivs här."
     }
   ],
   "service_band": {
-    "title": "Uppdrag 33",
-    "body": "Kort text om typer av uppdrag, roller, omfattning och upplägg skrivs här 34."
+    "title": "Uppdrag",
+    "body": "Kort text om typer av uppdrag, roller, omfattning och upplägg skrivs här."
   },
   "quote": {
-    "title": "Kort värdebudskap eller sammanfattande rubrik placeras här 35.",
-    "body": "Kort text om arbetssätt, erfarenhet och vilket stöd som erbjuds skrivs här 36."
+    "title": "Kort värdebudskap eller sammanfattande rubrik placeras här.",
+    "body": "Kort text om arbetssätt, erfarenhet och vilket stöd som erbjuds skrivs här."
   },
   "footer": {
     "brand": "CBU AB",
-    "summary": "Kort sammanfattning av erbjudande, kompetens och kontaktvägar skrivs här 37."
+    "summary": "Kort sammanfattning av erbjudande, kompetens och kontaktvägar skrivs här."
   }
 }

@@ -175,7 +175,7 @@ body {
   position: relative;
   min-height: 82vh;
   display: grid;
-  align-items: center;
+  align-items: end;
   padding: 104px clamp(18px, 4vw, 58px) 48px;
   color: var(--white);
   background: var(--blue-ink);
@@ -194,14 +194,15 @@ body {
 .hero-puzzle-map {
   position: absolute;
   z-index: 1;
+  container-type: inline-size;
   --hero-center-logo-left: 49.7%;
   --hero-center-logo-top: 51.35%;
   --hero-center-logo-width: 20.5%;
-  top: 48%;
+  top: 46%;
   left: 50%;
-  width: min(40vw, 54vh, 632px);
+  width: min(48vw, 70vh, 780px);
   aspect-ratio: 1;
-  transform: translate(-50%, -52%);
+  transform: translate(-50%, -50%);
 }
 
 .hero-puzzle-image {
@@ -216,13 +217,12 @@ body {
 .puzzle-label {
   position: absolute;
   display: grid;
-  width: 24%;
-  max-width: 136px;
-  min-height: 46px;
+  width: 26cqw;
+  min-height: 10.5cqw;
   place-items: center;
-  padding: 5px 6px;
+  padding: 0.75cqw 0.9cqw;
   color: var(--blue-ink);
-  font-size: clamp(0.62rem, 0.84vw, 0.8rem);
+  font-size: clamp(0.5rem, 2.5cqw, 0.92rem);
   font-weight: 800;
   line-height: 1.05;
   text-align: center;
@@ -236,7 +236,7 @@ body {
 
 .puzzle-label span:last-child {
   display: block;
-  max-width: 13ch;
+  max-width: 100%;
   white-space: pre-line;
 }
 
@@ -250,17 +250,6 @@ body {
   border-radius: 6px;
   outline: 3px solid rgba(47, 104, 201, 0.8);
   outline-offset: 4px;
-}
-
-.puzzle-index {
-  display: block;
-  width: 100%;
-  justify-self: center;
-  margin-bottom: 5px;
-  color: var(--blue);
-  font-size: 0.74em;
-  letter-spacing: 0;
-  text-align: center;
 }
 
 .puzzle-label-01 {
@@ -279,12 +268,12 @@ body {
 }
 
 .puzzle-label-04 {
-  top: 50%;
+  top: calc(53.5% - 5px);
   left: 23%;
 }
 
 .puzzle-label-05 {
-  top: 50%;
+  top: calc(53.5% - 5px);
   left: 77%;
 }
 
@@ -304,8 +293,10 @@ body {
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
   z-index: 3;
+  left: clamp(18px, 4vw, 58px);
+  bottom: clamp(44px, 7vh, 84px);
   max-width: 460px;
   display: grid;
   gap: var(--space-4);
@@ -335,14 +326,14 @@ p {
 
 h1 {
   max-width: 15ch;
-  font-size: clamp(3.36rem, 8.8vw, 7.6rem);
+  font-size: clamp(2.45rem, 6.1vw, 5.25rem);
   line-height: 0.94;
   letter-spacing: 0;
 }
 
 .hero-title {
   max-width: 11ch;
-  font-size: clamp(2.4rem, 4.8vw, 4.32rem);
+  font-size: clamp(1.85rem, 3.7vw, 3.15rem);
 }
 
 .hero-logo-heading {
@@ -377,13 +368,13 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2.1rem, 4.8vw, 4.25rem);
+  font-size: clamp(1.75rem, 3.6vw, 3.15rem);
   line-height: 1.04;
   letter-spacing: 0;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 1.14rem + 0.42vw, 1.48rem);
+  font-size: clamp(1.12rem, 1.04rem + 0.32vw, 1.32rem);
   line-height: 1.2;
 }
 
@@ -515,7 +506,7 @@ body.has-specialty-popup-open {
 }
 
 .phone-popup-title {
-  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  font-size: clamp(1.55rem, 3vw, 2.05rem);
   line-height: 1.05;
 }
 
@@ -607,8 +598,7 @@ body.has-specialty-popup-open {
   outline-offset: 4px;
 }
 
-.specialty-popup-kicker,
-.specialty-popup-index {
+.specialty-popup-kicker {
   color: var(--blue);
   font-size: 0.82rem;
   font-weight: 800;
@@ -616,12 +606,8 @@ body.has-specialty-popup-open {
   text-transform: uppercase;
 }
 
-.specialty-popup-index {
-  letter-spacing: 0.14em;
-}
-
 .specialty-popup-title {
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
   line-height: 1.05;
 }
 
@@ -1026,15 +1012,6 @@ body.has-specialty-popup-open {
   line-height: 1.65;
 }
 
-.specialty-index {
-  margin-bottom: 0;
-  color: var(--blue) !important;
-  font-size: 0.84rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
 .service-band {
   display: flex;
   align-items: center;
@@ -1053,7 +1030,7 @@ body.has-specialty-popup-open {
 }
 
 .service-band h2 {
-  font-size: clamp(2.25rem, 4.8vw, 4rem);
+  font-size: clamp(1.75rem, 3.6vw, 3.15rem);
 }
 
 .service-band p {
@@ -1151,6 +1128,17 @@ address,
   color: var(--white);
 }
 
+@media (min-width: 901px) and (max-width: 1500px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero-puzzle-map {
+    top: 40%;
+    width: min(46vw, 60vh, 680px);
+  }
+}
+
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
@@ -1178,6 +1166,9 @@ address,
   }
 
   .hero-content {
+    position: relative;
+    left: auto;
+    bottom: auto;
     max-width: 600px;
   }
 
@@ -1212,7 +1203,7 @@ address,
   }
 
   h1 {
-    font-size: clamp(3.25rem, 16vw, 5.25rem);
+    font-size: clamp(2.3rem, 10.8vw, 3.6rem);
     max-width: 100%;
     overflow-wrap: break-word;
   }
@@ -1231,15 +1222,10 @@ address,
   }
 
   .puzzle-label {
-    width: 24%;
-    max-width: 106px;
-    min-height: 38px;
-    padding: 4px 5px;
-    font-size: clamp(0.46rem, 1.9vw, 0.56rem);
-  }
-
-  .puzzle-index {
-    margin-bottom: 3px;
+    width: 26cqw;
+    min-height: 10.5cqw;
+    padding: 0.75cqw 0.9cqw;
+    font-size: clamp(0.5rem, 2.5cqw, 0.92rem);
   }
 
   .hero-actions {
@@ -1344,7 +1330,4 @@ address,
     padding: 22px;
   }
 
-  .specialty-index {
-    font-size: 0.8rem;
-  }
 }

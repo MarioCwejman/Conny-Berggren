@@ -11,7 +11,6 @@ const phonePopupNumber = document.querySelector("[data-phone-popup-number]");
 const phonePopupStatus = document.querySelector("[data-phone-popup-status]");
 const phonePopupCopyButton = document.querySelector("[data-phone-popup-copy]");
 const specialtyPopup = document.querySelector("[data-specialty-popup]");
-const specialtyPopupIndex = document.querySelector("[data-specialty-popup-index]");
 const specialtyPopupTitle =
   document.querySelector("[data-specialty-popup-title]") ||
   document.getElementById("specialty-popup-title");
@@ -207,14 +206,10 @@ const renderPuzzleLabel = (specialty) => {
   link.className = `puzzle-label puzzle-label-${formatIndex(specialty.slot)}`;
   link.href = `#${specialty.slug}`;
 
-  const index = document.createElement("span");
-  index.className = "puzzle-index";
-  index.textContent = formatIndex(specialty.slot);
-
   const label = document.createElement("span");
   label.textContent = specialty.puzzleLabel;
 
-  link.append(index, label);
+  link.append(label);
   return link;
 };
 
@@ -230,14 +225,10 @@ const renderSpecialtyCard = (specialty) => {
   const summary = document.createElement("div");
   summary.className = "specialty-summary";
 
-  const index = document.createElement("p");
-  index.className = "specialty-index";
-  index.textContent = formatIndex(specialty.slot);
-
   const title = document.createElement("h3");
   title.textContent = specialty.title;
 
-  summary.append(index, title);
+  summary.append(title);
 
   if (specialty.preview) {
     const preview = document.createElement("p");
@@ -433,10 +424,6 @@ const openSpecialtyPopup = (specialty, trigger) => {
   if (!specialtyPopup || !specialtyPopupTitle || !specialtyPopupBody) return;
 
   activeSpecialtyTrigger = trigger;
-
-  if (specialtyPopupIndex) {
-    specialtyPopupIndex.textContent = formatIndex(specialty.slot);
-  }
 
   specialtyPopupTitle.textContent = specialty.title;
   specialtyPopupBody.replaceChildren(renderSpecialtyPopupContent(specialty));
