@@ -1,5 +1,6 @@
 const CONTENT_URL = "content/site-content.json";
 const MAX_PUZZLE_SLOTS = 8;
+const CREDENTIAL_PREVIEW_LIMIT = 300;
 
 const header = document.querySelector("[data-header]");
 const prefersReducedMotion = window.matchMedia(
@@ -16,19 +17,42 @@ const specialtyPopupTitle =
   document.getElementById("specialty-popup-title");
 const specialtyPopupBody = document.querySelector("[data-specialty-popup-body]");
 const specialtyPopupFocusTarget = document.querySelector("[data-specialty-popup-focus]");
+const credentialPopup = document.querySelector("[data-credential-popup]");
+const credentialPopupTitle =
+  document.querySelector("[data-credential-popup-title]") ||
+  document.getElementById("credential-popup-title");
+const credentialPopupBody = document.querySelector("[data-credential-popup-body]");
+const credentialPopupFocusTarget = document.querySelector("[data-credential-popup-focus]");
+const profileSummary = document.querySelector("[data-profile-summary]");
+const profileMoreButton = document.querySelector("[data-profile-more]");
 
 let specialtiesHeading = null;
 let specialtyCards = [];
 let puzzleLinks = [];
+let credentialCards = [];
 let highlightTimer;
 let activePhoneTrigger = null;
 let activePhoneNumber = "";
 let activeSpecialtyTrigger = null;
+let activeCredentialTrigger = null;
 let specialtiesBySlug = new Map();
+let credentialsBySlug = new Map();
 
 const setHeaderState = () => {
   if (!header) return;
   header.classList.toggle("is-scrolled", window.scrollY > 24);
+};
+
+const initializeProfileSummary = () => {
+  if (!profileSummary || !profileMoreButton) return;
+
+  profileMoreButton.addEventListener("click", () => {
+    const isExpanded = !profileSummary.classList.contains("is-expanded");
+
+    profileSummary.classList.toggle("is-expanded", isExpanded);
+    profileMoreButton.setAttribute("aria-expanded", String(isExpanded));
+    profileMoreButton.textContent = isExpanded ? "Visa mindre" : "Tryck för att läsa mer";
+  });
 };
 
 const queryAll = (selector) => [...document.querySelectorAll(selector)];
@@ -89,13 +113,14 @@ const getSpecialtyPreview = (summary, details) =>
 
 const getSpecialtyPopupParagraphs = (specialty) => {
   const paragraphs = [];
+  const summary = String(specialty.summary ?? "").trim();
 
-  if (specialty.summary) {
-    paragraphs.push(specialty.summary);
+  if (summary) {
+    paragraphs.push(summary);
   }
 
   splitParagraphs(specialty.details)
-    .filter((paragraph) => paragraph !== specialty.summary)
+    .filter((paragraph) => paragraph !== summary)
     .forEach((paragraph) => {
       paragraphs.push(paragraph);
     });
@@ -104,8 +129,7 @@ const getSpecialtyPopupParagraphs = (specialty) => {
 };
 
 const hasExtendedSpecialtyContent = (specialty) =>
-  getSpecialtyPopupParagraphs(specialty).length > 1 ||
-  specialty.preview.length > 140;
+  getSpecialtyPopupParagraphs(specialty).length > 0;
 
 const normalizeSpecialties = (items) => {
   const availableSlots = Array.from(
@@ -178,16 +202,52 @@ const normalizeSpecialties = (items) => {
     .sort((left, right) => left.slot - right.slot);
 };
 
-const renderCredentialItem = (item) => {
-  const element = document.createElement(item.url ? "a" : "article");
-  element.className = "credential-card";
+const hasExtendedCredentialContent = (item) =>
+  String(item?.detail ?? "").trim().length > CREDENTIAL_PREVIEW_LIMIT;
+
+const renderCredentialPopupContent = (item) => {
+  const fragment = document.createDocumentFragment();
+
+  splitParagraphs(item.detail).forEach((paragraph) => {
+    const content = document.createElement("p");
+    content.textContent = paragraph;
+    fragment.append(content);
+  });
 
   if (item.url) {
-    element.href = item.url;
+    const actions = document.createElement("div");
+    actions.className = "specialty-popup-actions";
+
+    const link = document.createElement("a");
+    link.className = "button secondary";
+    link.href = item.url;
+    link.textContent = "CV PDF";
+
     if (/^https?:\/\//.test(item.url) || item.url.endsWith(".pdf")) {
-      element.target = "_blank";
-      element.rel = "noopener";
+      link.target = "_blank";
+      link.rel = "noopener";
     }
+
+    actions.append(link);
+    fragment.append(actions);
+  }
+
+  return fragment;
+};
+
+const renderCredentialItem = (item, index) => {
+  const element = document.createElement("article");
+  element.className = "credential-card";
+  element.id = `credential-${slugify(item.title || `item-${index + 1}`)}`;
+
+  const hasMore = hasExtendedCredentialContent(item);
+  element.classList.toggle("has-more", hasMore);
+
+  if (hasMore) {
+    element.tabIndex = 0;
+    element.setAttribute("role", "button");
+    element.setAttribute("aria-haspopup", "dialog");
+    element.setAttribute("aria-label", `Visa mer om ${item.title}`);
   }
 
   const title = document.createElement("strong");
@@ -198,6 +258,14 @@ const renderCredentialItem = (item) => {
   detail.textContent = item.detail;
 
   element.append(title, detail);
+
+  if (hasMore) {
+    const cta = document.createElement("span");
+    cta.className = "credential-cta";
+    cta.textContent = "Tryck f\u00f6r att l\u00e4sa mer";
+    element.append(cta);
+  }
+
   return element;
 };
 
@@ -345,6 +413,12 @@ const renderSite = (data) => {
 
   const credentialList = document.querySelector("[data-credentials-list]");
   if (credentialList) {
+    credentialsBySlug = new Map(
+      (data.credentials?.items || []).map((item, index) => [
+        `credential-${slugify(item.title || `item-${index + 1}`)}`,
+        item,
+      ]),
+    );
     credentialList.replaceChildren(
       ...(data.credentials?.items || []).map(renderCredentialItem),
     );
@@ -445,6 +519,38 @@ const closeSpecialtyPopup = () => {
   activeSpecialtyTrigger = null;
 };
 
+const openCredentialPopup = (credential, trigger) => {
+  if (!credentialPopup || !credentialPopupTitle || !credentialPopupBody) return;
+
+  activeCredentialTrigger = trigger;
+
+  credentialPopupTitle.textContent = credential.title;
+  credentialPopupBody.replaceChildren(renderCredentialPopupContent(credential));
+  credentialPopup.hidden = false;
+  document.body.classList.add("has-credential-popup-open");
+
+  requestAnimationFrame(() => {
+    credentialPopupFocusTarget?.focus();
+  });
+};
+
+const closeCredentialPopup = () => {
+  if (!credentialPopup || credentialPopup.hidden) return;
+
+  credentialPopup.hidden = true;
+  document.body.classList.remove("has-credential-popup-open");
+  credentialPopupBody?.replaceChildren();
+  activeCredentialTrigger?.focus();
+  activeCredentialTrigger = null;
+};
+
+const openCredentialPopupForCard = (card, trigger = card) => {
+  const credential = credentialsBySlug.get(card.id);
+  if (!credential) return;
+
+  openCredentialPopup(credential, trigger);
+};
+
 const openSpecialtyPopupForCard = (card, trigger = card) => {
   const specialty = specialtiesBySlug.get(card.id);
   if (!specialty) return;
@@ -459,6 +565,33 @@ const initializeSpecialtyPopup = () => {
 
     event.preventDefault();
     closeSpecialtyPopup();
+  });
+};
+
+const initializeCredentialPopup = () => {
+  credentialPopup?.addEventListener("click", (event) => {
+    const closeControl = event.target.closest("[data-credential-popup-close]");
+    if (!closeControl) return;
+
+    event.preventDefault();
+    closeCredentialPopup();
+  });
+};
+
+const initializeCredentialInteractions = () => {
+  credentialCards = queryAll(".credential-card.has-more");
+
+  credentialCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      openCredentialPopupForCard(card);
+    });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+
+      event.preventDefault();
+      openCredentialPopupForCard(card);
+    });
   });
 };
 
@@ -609,6 +742,8 @@ const init = async () => {
   try {
     const content = await loadContent();
     renderSite(content);
+    initializeCredentialPopup();
+    initializeCredentialInteractions();
     initializeSpecialtyPopup();
     initializeSpecialtyInteractions();
   } catch (error) {
@@ -617,6 +752,7 @@ const init = async () => {
   }
 
   initializePhonePopup();
+  initializeProfileSummary();
 
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
@@ -624,6 +760,12 @@ const init = async () => {
     if (!specialtyPopup?.hidden) {
       event.preventDefault();
       closeSpecialtyPopup();
+      return;
+    }
+
+    if (!credentialPopup?.hidden) {
+      event.preventDefault();
+      closeCredentialPopup();
       return;
     }
 

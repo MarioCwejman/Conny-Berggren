@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Conny Berggren | CBU Management",
-    "description": "Senior av RISE, KIWA och IHM certifierad och medlem i SBR projektledare, kontrollansvarig PBL och entreprenadbesiktningsman. Tvisteförebyggande rådgivning."
+    "description": "Certifierad projektledare, kontrollansvarig enligt PBL och entreprenadbesiktningsman. Tvisteförebyggande rådgivning."
   },
   "brand": {
     "primary_name": "CBU Management",
@@ -21,8 +21,8 @@
     "address": "Postadress: Fjällgatan 22, 413 17 Göteborg"
   },
   "hero": {
-    "eyebrow": "Senior certifierad och medlem i SBR projektledare, kontrollansvarig PBL och entreprenadbesiktningsman. Tvisteförebyggande rådgivning.",
-    "title": "Tjänster inom samhällsbyggarsektorn  ",
+    "eyebrow": "Certifierad projektledare · Kontrollansvarig PBL · Entreprenadbesiktningsman",
+    "title": "Tjänster inom samhällsbyggar\u00adsektorn",
     "lede": "Min ambition är att leverera tydliga, strukturerade och praktiskt användbara råd som skapar beslutsunderlag för dig som beställare. ",
     "line": "Min ambition är att leverera tydliga, strukturerade och praktiskt användbara råd som skapar beslutsunderlag för dig som beställare. "
   },
@@ -44,11 +44,6 @@
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
       },
       {
-        "title": "Behörighet",
-        "detail": "Kort text om behörighet skrivs här.",
-        "url": "assets/cv-conny-berggren-2026-03-30.pdf"
-      },
-      {
         "title": "Utbildning",
         "detail": "Mina kvalifikationer har byggts upp genom både praktisk och teoretisk utveckling inom samhällsbyggnadsbranschen, med start som utbildad byggnadssnickare och vidare i ledande roller inom produktion och projektledning. Parallellt har jag genomgått fortlöpande tekniska, organisatoriska och entreprenadjuridiska utbildningar.\nGenom vidareutbildning och certifieringar som projektledare, kontrollansvarig PBL, entreprenadbesiktning och arbetsmiljö BAS har jag utvecklat en bred förståelse för de regelverk och processer som styr byggandet.",
         "url": "assets/cv-conny-berggren-2026-03-30.pdf"
@@ -62,8 +57,8 @@
   },
   "specialties_section": {
     "kicker": "Kompetenser",
-    "title": "Jag erbjuder bred och kvalificerad kompetens inom samhällsbyggnadsprocessen, med erfarenhet från entreprenad, projektledning, kontrollansvar, besiktning och sakkunniguppdrag. Min styrka ligger i att kombinera praktiskt genomförandekunnande med god förståelse för regelverk, kvalitetssäkring och riskhantering.",
-    "intro": "Kort introduktion om kompetenserna skrivs här."
+    "title": "Rätt kompetens genom hela byggprocessen",
+    "intro": "Jag erbjuder bred och kvalificerad kompetens inom samhällsbyggnadsprocessen, med erfarenhet från entreprenad, projektledning, kontrollansvar, besiktning och sakkunniguppdrag. Min styrka ligger i att kombinera praktiskt genomförandekunnande med god förståelse för regelverk, kvalitetssäkring och riskhantering."
   },
   "specialties": [
     {
@@ -88,39 +83,11 @@
       "details": "Som RISE-certifierad kontrollansvarig enligt PBL (nivå K) och medlem i SBR:s grupp för kontrollansvariga erbjuder jag en strukturerad och kvalitetssäkrad hantering av byggprocessens myndighetskrav. Min roll är att, i nära samverkan med byggherre och övriga aktörer, säkerställa att projektet uppfyller kraven enligt plan- och bygglagen (PBL), plan- och byggförordningen (PBF) samt Boverkets byggregler, från startbesked till slutbesked.\nArbetet omfattar upprättande och uppföljning av kontrollplan, deltagande vid tekniska samråd, arbetsplatsbesök samt löpande dokumentation och avstämningar. Genom ett systematiskt och metodiskt arbetssätt säkerställs att kritiska moment kontrolleras i rätt tid och att eventuella avvikelser hanteras korrekt och effektivt.\nMitt medlemskap i SBR innebär tillgång till ett etablerat nätverk av sakkunniga, kontinuerlig kompetensutveckling samt beprövade arbetsmetoder. Det ger dig som beställare en extra trygghet i att uppdraget utförs enligt branschens riktlinjer, etiska krav och med aktuell kunskap om regelverk och praxis.\nMålet är en smidig, rättssäker och väl dokumenterad byggprocess där risker minimeras och förutsättningarna för ett godkänt slutbesked säkerställs."
     },
     {
-      "slot": "4",
+      "slot": "7",
       "puzzle_label": "Tvistförebyggande",
       "title": "Tvistförebyggande rådgivning",
       "summary": "Jag erbjuder rådgivning baserad på gedigen erfarenhet och kontinuerlig kompetensutveckling genom roller som entreprenör, ombud, konsult, sakkunnig, kontrollansvarig och besiktningsman. Med djup praktisk förståelse för byggandets regelverk identifierar jag tidigt risker och skapar förutsättningar för effektiva, kvalitetssäkrade och konfliktsnåla projekt.\nSom sakkunnig inom tvister bidrar jag med teknisk och praktisk kompetens för att förebygga, tydliggöra och hantera frågor som kan leda till oenighet mellan projektets parter.",
       "details": "Jag är inte advokat eller jurist, men fungerar som ett stöd till part med fokus på att minska konflikter och främja en effektiv och konstruktiv samverkan mellan projektets parter. I samråd med advokat agerar jag som sakkunnig och bistår med sakkunnigutlåtanden samt teknisk och praktisk kompetens i syfte att förebygga och hantera tvister."
-    },
-    {
-      "slot": "5",
-      "puzzle_label": "Kompetens",
-      "title": "Kompetens",
-      "summary": "Kort text om kompetens skrivs här.",
-      "details": "Kort beskrivning av kompetens skrivs här."
-    },
-    {
-      "slot": "6",
-      "puzzle_label": "Kompetens",
-      "title": "Kompetens",
-      "summary": "Kort text om kompetens skrivs här.",
-      "details": "Kort beskrivning av kompetens skrivs här."
-    },
-    {
-      "slot": "7",
-      "puzzle_label": "Kompetens",
-      "title": "Kompetens",
-      "summary": "Kort text om kompetens skrivs här.",
-      "details": "Kort beskrivning av kompetens skrivs här."
-    },
-    {
-      "slot": "8",
-      "puzzle_label": "Kompetens",
-      "title": "Kompetens",
-      "summary": "Kort text om kompetens skrivs här.",
-      "details": "Kort beskrivning av kompetens skrivs här."
     }
   ],
   "service_band": {
@@ -128,8 +95,8 @@
     "body": "Byggherreombud – företräder byggherren och säkerställer att projektet genomförs enligt mål, avtal och krav\nProjektstyrning – planering, uppföljning av tid, kostnad och kvalitet\nSamordning – leder och samordnar entreprenörer, konsulter och övriga aktörer\nUpphandling – stöd vid framtagande av förfrågningsunderlag och val av entreprenörer/konsulter\nRiskhantering – identifierar och hanterar risker i tidigt skede\nEkonomistyrning – budget, prognoser och kostnadskontroll\nKvalitetssäkring – säkerställer att projektet uppfyller krav enligt avtal, PBL, PBF och BBR\nKommunikation – tydlig rapportering och beslutsunderlag till beställaren\nTvisteförebyggande arbete – struktur och dokumentation som minskar risken för tvister"
   },
   "quote": {
-    "title": "Med certifierad kompetens, bred erfarenhet och tillgång till ett starkt branschnätverk stöttar jag dig genom hela byggprocessen – från första beslut till slutbesked, med fokus på rätt kvalitet, minimerade risker och tydliga resultat.",
-    "body": "Kort text om arbetssätt, erfarenhet och vilket stöd som erbjuds skrivs här."
+    "title": "Tryggt stöd från första beslut till slutbesked",
+    "body": "Med certifierad kompetens, bred erfarenhet och tillgång till ett starkt branschnätverk stöttar jag dig genom hela byggprocessen – från första beslut till slutbesked, med fokus på rätt kvalitet, minimerade risker och tydliga resultat."
   },
   "footer": {
     "brand": "CBU AB",

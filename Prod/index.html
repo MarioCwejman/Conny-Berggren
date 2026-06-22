@@ -127,8 +127,17 @@
           </div>
           <div>
             <p class="profile-name" data-profile-name></p>
-            <p data-profile-summary></p>
+            <p class="profile-summary" id="profile-summary" data-profile-summary></p>
           </div>
+          <button
+            class="profile-more"
+            type="button"
+            data-profile-more
+            aria-controls="profile-summary"
+            aria-expanded="false"
+          >
+            Tryck f&ouml;r att l&auml;sa mer
+          </button>
         </aside>
       </section>
 
@@ -255,6 +264,38 @@
           data-specialty-popup-title
         ></h2>
         <div class="specialty-popup-body" id="specialty-popup-body" data-specialty-popup-body></div>
+      </div>
+    </div>
+
+    <div class="specialty-popup credential-popup" data-credential-popup hidden>
+      <div class="specialty-popup-backdrop" data-credential-popup-close></div>
+      <div
+        class="specialty-popup-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="credential-popup-title"
+        aria-describedby="credential-popup-body"
+      >
+        <button
+          class="specialty-popup-close"
+          type="button"
+          data-credential-popup-close
+          data-credential-popup-focus
+          aria-label="St&auml;ng popup"
+        >
+          St&auml;ng
+        </button>
+        <p class="specialty-popup-kicker">Certifiering</p>
+        <h2
+          class="specialty-popup-title"
+          id="credential-popup-title"
+          data-credential-popup-title
+        ></h2>
+        <div
+          class="specialty-popup-body"
+          id="credential-popup-body"
+          data-credential-popup-body
+        ></div>
       </div>
     </div>
 
