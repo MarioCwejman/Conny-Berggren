@@ -1,6 +1,7 @@
 const CONTENT_URL = "content/site-content.json";
 const MAX_PUZZLE_SLOTS = 8;
 const CREDENTIAL_PREVIEW_LIMIT = 300;
+const CREDENTIAL_CARD_PREVIEW_LIMIT = 135;
 
 const header = document.querySelector("[data-header]");
 const prefersReducedMotion = window.matchMedia(
@@ -205,6 +206,22 @@ const normalizeSpecialties = (items) => {
 const hasExtendedCredentialContent = (item) =>
   String(item?.detail ?? "").trim().length > CREDENTIAL_PREVIEW_LIMIT;
 
+const getCredentialCardPreview = (detail) => {
+  const normalized = String(detail ?? "").replace(/\s+/g, " ").trim();
+
+  if (normalized.length <= CREDENTIAL_CARD_PREVIEW_LIMIT) {
+    return normalized;
+  }
+
+  const preview = normalized.slice(0, CREDENTIAL_CARD_PREVIEW_LIMIT + 1);
+  const lastSpace = preview.lastIndexOf(" ");
+  const endIndex = lastSpace > CREDENTIAL_CARD_PREVIEW_LIMIT * 0.6
+    ? lastSpace
+    : CREDENTIAL_CARD_PREVIEW_LIMIT;
+
+  return `${preview.slice(0, endIndex).trim()}...`;
+};
+
 const renderCredentialPopupContent = (item) => {
   const fragment = document.createDocumentFragment();
 
@@ -255,7 +272,7 @@ const renderCredentialItem = (item, index) => {
 
   const detail = document.createElement("span");
   detail.className = "credential-detail";
-  detail.textContent = item.detail;
+  detail.textContent = hasMore ? getCredentialCardPreview(item.detail) : item.detail;
 
   element.append(title, detail);
 

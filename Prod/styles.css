@@ -864,11 +864,13 @@ body.has-credential-popup-open {
 }
 
 .credential-card.has-more .credential-detail {
-  display: -webkit-box;
+  display: block;
   min-height: 0;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  overflow: visible;
+  overflow-wrap: break-word;
+  -webkit-box-orient: initial;
+  -webkit-line-clamp: unset;
+  hyphens: none;
 }
 
 .credential-cta {
