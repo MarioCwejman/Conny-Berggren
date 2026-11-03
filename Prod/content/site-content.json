@@ -11,7 +11,7 @@
     "vat_number": "Momsreg.nr: SE559249542701"
   },
   "assets": {
-    "portrait_image": "assets/conny-berggren.png",
+    "portrait_image": "/assets/CBU 5.jpg",
     "cv_file": "assets/cv-conny-berggren-2026-03-30.pdf"
   },
   "contact": {
@@ -22,7 +22,7 @@
   },
   "hero": {
     "eyebrow": "Certifierad projektledare · Kontrollansvarig PBL · Entreprenadbesiktningsman",
-    "title": "Tjänster inom samhällsbyggar\u00adsektorn",
+    "title": "Tjänster inom samhällsbyggar­sektorn",
     "lede": "Min ambition är att leverera tydliga, strukturerade och praktiskt användbara råd som skapar beslutsunderlag för dig som beställare. ",
     "line": "Min ambition är att leverera tydliga, strukturerade och praktiskt användbara råd som skapar beslutsunderlag för dig som beställare. "
   },
